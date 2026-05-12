@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0c0c1a">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="韓文積木">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192x192.png">
+<title>韓文句型積木</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0c0c1a;--surface:#151528;--card:#1c1c35;--border:#2a2a4a;--text:#e8e6f0;--dim:#8888aa;--ko:#4ecdc4;--ko2:#0047AB;--red:#C8102E;--gold:#ffd700;--cn:#ffa94d;--yang:#ffd700;--yin:#9c88ff;--foot:#ff9800;--nofoot:#66bb6a}
+*{box-sizing:border-box;margin:0;padding:0}body{font-family:'Noto Sans TC',sans-serif;background:var(--bg);color:var(--text);-webkit-user-select:text;user-select:text}
+.header{padding:10px 14px 6px;display:flex;align-items:center;gap:6px;position:sticky;top:0;z-index:100;background:var(--bg);border-bottom:1px solid var(--border);flex-wrap:wrap}
+.logo{font-size:1rem;font-weight:900;background:linear-gradient(135deg,var(--red),var(--ko));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.sw,.lt{display:flex;background:var(--surface);border-radius:18px;border:1px solid var(--border);overflow:hidden}
+.ub,.lb{padding:4px 10px;border:none;background:transparent;color:var(--dim);font-family:inherit;font-size:.72rem;font-weight:700;cursor:pointer}
+.ub.a{background:rgba(255,215,0,.1);color:var(--gold)}.lt{margin-left:auto}
+.hn{display:flex;align-items:center;gap:4px;margin:0 auto}
+.nb{width:28px;height:28px;border:1px solid var(--border);border-radius:50%;background:var(--surface);color:var(--text);font-size:.8rem;cursor:pointer;display:flex;align-items:center;justify-content:center}.nb:disabled{opacity:.3}
+.nc{font-size:.72rem;color:var(--dim);min-width:40px;text-align:center;background:transparent;border:1px solid transparent;border-radius:6px;font-family:inherit;padding:2px 4px;cursor:pointer}.nc:focus{border-color:rgba(255,215,0,.4);color:#ffd700;outline:none}
+.lb.a-ko{background:rgba(78,205,196,.12);color:var(--ko)}.lb.a-zhuyin{background:rgba(255,215,0,.1);color:var(--gold)}
+.badge{padding:2px 7px;border-radius:9px;font-size:.58rem}.pb{background:rgba(80,200,120,.1);border:1px solid rgba(80,200,120,.3);color:#50c878}
+.dt{display:flex;gap:3px;padding:5px 10px;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid rgba(255,255,255,.03)}.dt::-webkit-scrollbar{display:none}
+.tab{padding:3px 9px;border:1px solid var(--border);border-radius:12px;background:transparent;color:var(--dim);font-family:inherit;font-size:.62rem;font-weight:700;cursor:pointer;white-space:nowrap;flex-shrink:0}.tab.a{border-color:var(--gold);color:var(--gold);background:rgba(255,215,0,.08)}
+.mc{margin:10px;border-radius:14px;background:var(--card);border:1px solid var(--border);overflow:hidden}
+.mc.m-ko{border-color:rgba(78,205,196,.3)}.mc.m-zhuyin{border-color:rgba(255,215,0,.3)}
+.ca{padding:14px 18px 6px;text-align:center}.cs{font-size:1.5rem;font-weight:900;color:var(--cn)}.cd{font-size:.72rem;color:var(--dim);margin-top:3px}
+.ba{padding:5px 14px 14px;min-height:70px}.br{display:flex;flex-wrap:wrap;gap:5px;justify-content:center;padding:5px 0;animation:fu .3s ease}
+.bk{padding:8px 14px;border-radius:10px;font-weight:700;font-size:1.05rem;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:1px;position:relative}.bk:hover{transform:translateY(-2px)}
+.bk-r{font-size:.55rem;opacity:.45;font-weight:400}
+.bk-ko{background:rgba(78,205,196,.1);border:1.5px solid rgba(78,205,196,.3);color:#a8ece8}
+.bk-foot{position:absolute;bottom:-2px;right:-2px;font-size:.5rem}
+.r-主角{border-left:3px solid #ff6b6b}.r-動作{border-left:3px solid #4ecdc4}.r-對象{border-left:3px solid #ffd93d}.r-修飾{border-left:3px solid #a78bfa}.r-連接{border-left:3px solid #888}.r-場景{border-left:3px solid #66bb6a}.r-目標{border-left:3px solid #ff9800}.r-時間{border-left:3px solid #42a5f5}.r-語氣{border-left:3px solid #ef5350}
+.sf{border:1px solid var(--border);background:var(--surface);color:var(--dim);font-family:inherit;font-size:.75rem;padding:4px 12px;border-radius:9px;cursor:pointer}
+.cb{margin:0 14px 10px;padding:10px 14px;border-radius:9px;background:var(--surface);border:1px solid var(--border);font-size:.82rem;line-height:1.7;color:var(--dim)}.cl{font-weight:700;margin-right:3px}
+.lg{display:flex;flex-wrap:wrap;gap:4px;padding:0 14px 7px;justify-content:center}.li{display:flex;align-items:center;gap:2px;font-size:.48rem;color:var(--dim)}.ld{width:4px;height:4px;border-radius:2px}
+.dr{display:flex;gap:2px;justify-content:center;padding:0 14px 10px;flex-wrap:wrap}
+.d{width:5px;height:5px;border-radius:50%;background:var(--border);cursor:pointer}.d.a-ko{background:var(--ko)}.d.sn{background:rgba(80,200,120,.5)}
+.ki{margin:0 12px 12px;border-radius:14px;background:#1a1a35;border:1.5px solid rgba(255,215,0,.12);overflow:hidden;animation:fu .3s ease}
+.ki-h{padding:10px 14px 4px;display:flex;align-items:center;justify-content:center;gap:6px}
+.ki-ms{font-size:1.6rem}.ki-tt{font-size:.78rem;font-weight:900;color:var(--gold)}
+.ki-mt{text-align:center;padding:0 14px 6px;font-size:1.05rem;font-weight:900;line-height:1.3;color:#7eeae0}
+.ki-b{margin:0 10px 5px;padding:8px 12px;border-radius:9px;font-size:.85rem;line-height:1.7;font-weight:700}
+.ki-cn{background:rgba(255,169,77,.07);border:1px solid rgba(255,169,77,.12);color:#ffcc88}
+.ki-ko{background:rgba(78,205,196,.07);border:1px solid rgba(78,205,196,.12);color:#a8ece8}
+.ki-fl{font-size:.58rem;display:block;margin-bottom:2px;opacity:.5}
+.ki-tp{margin:3px 10px 10px;padding:6px 12px;border-radius:9px;background:linear-gradient(135deg,rgba(255,215,0,.07),rgba(255,169,77,.04));border:1px solid rgba(255,215,0,.12);text-align:center;font-size:.85rem;font-weight:900;color:var(--gold)}
+.phonics-pop{position:absolute;z-index:50;background:#1a1a35;border:1.5px solid rgba(78,205,196,.4);border-radius:12px;padding:8px 12px;font-size:.72rem;min-width:140px;box-shadow:0 8px 24px rgba(0,0,0,.5);pointer-events:none;animation:fu .2s ease}
+.phonics-pop .pp-char{font-size:1.2rem;font-weight:900;color:var(--ko);text-align:center;margin-bottom:4px}
+.phonics-pop .pp-row{display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px solid rgba(255,255,255,.05)}
+.phonics-pop .pp-hangul{color:var(--ko);font-weight:700}
+.phonics-pop .pp-zhuyin{color:var(--yang);font-weight:700}
+.phonics-pop .pp-label{color:var(--dim);font-size:.55rem}
+.phonics-pop .pp-foot{text-align:center;margin-top:4px;padding-top:4px;border-top:1px solid rgba(255,255,255,.1)}
+.gear-icon{padding:3px 8px;border:1px solid var(--border);border-radius:12px;background:transparent;color:var(--dim);font-size:.68rem;cursor:pointer;font-family:inherit;white-space:nowrap}
+.gear-icon:hover{border-color:rgba(255,215,0,.4);color:var(--gold)}
+.gear-icon.has-key{border-color:rgba(80,200,120,.3);color:#50c878}
+.set-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:99998;display:none;align-items:center;justify-content:center}
+.set-overlay.show{display:flex}
+.set-box{background:#1a1a35;border:1.5px solid rgba(255,215,0,.2);border-radius:16px;padding:20px;max-width:360px;width:90%;margin:20px}
+.set-box h3{color:#ffd700;font-size:.85rem;margin-bottom:10px;text-align:center}
+.set-box label{font-size:.68rem;color:rgba(255,255,255,.5);display:block;margin-bottom:4px}
+.set-box input{width:100%;padding:8px 12px;border-radius:9px;border:1.5px solid rgba(255,215,0,.2);background:rgba(255,255,255,.05);color:#fff;font-size:.78rem;font-family:monospace;box-sizing:border-box;margin-bottom:8px}
+.set-box input:focus{outline:none;border-color:rgba(255,215,0,.5)}
+.set-box .set-hint{font-size:.6rem;color:rgba(255,255,255,.3);line-height:1.5;margin-bottom:10px}
+.set-box .set-btns{display:flex;gap:8px;justify-content:center}
+.set-box .set-btns button{padding:8px 20px;border-radius:9px;border:none;font-weight:900;font-size:.75rem;cursor:pointer;font-family:inherit}
+.set-box .set-btns .save{background:linear-gradient(135deg,#ffd700,#ff9800);color:#1a1a2e}
+.set-box .set-btns .cancel{background:rgba(255,255,255,.08);color:rgba(255,255,255,.5)}
+.verb-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:99998;display:none;align-items:center;justify-content:center;padding:16px}
+.verb-overlay.show{display:flex}
+.verb-modal{background:var(--card);border-radius:16px;padding:16px 18px;max-width:420px;width:100%;max-height:85vh;overflow:auto;border:1px solid rgba(255,215,0,.2);box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.verb-modal-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}.verb-modal-h span{font-size:.85rem;font-weight:900;color:#ffd700}.verb-modal-h button{background:none;border:none;color:rgba(255,255,255,.5);font-size:1.1rem;cursor:pointer;padding:4px 8px;border-radius:6px}.verb-modal-h button:hover{color:#fff;background:rgba(255,255,255,.1)}
+.vtab-bar{display:flex;gap:4px;margin-bottom:10px}.vtab{flex:1;padding:6px 0;border:1px solid rgba(255,255,255,.1);border-radius:8px;background:transparent;color:rgba(255,255,255,.4);font-size:.7rem;font-weight:700;cursor:pointer;font-family:inherit}.vtab.a{background:rgba(255,215,0,.15);color:#ffd700;border-color:rgba(255,215,0,.3)}
+.diy-input{display:flex;gap:6px;margin-bottom:8px}
+.diy-input input{flex:1;padding:8px 12px;border-radius:9px;border:1.5px solid rgba(78,205,196,.2);background:rgba(255,255,255,.05);color:#fff;font-size:.85rem;font-family:inherit}
+.diy-input input::placeholder{color:rgba(255,255,255,.3)}
+.diy-input input:focus{outline:none;border-color:rgba(78,205,196,.5)}
+.diy-btn{padding:8px 16px;border-radius:9px;border:none;font-weight:900;font-size:.78rem;cursor:pointer;font-family:inherit;white-space:nowrap}
+.diy-btn.go{background:linear-gradient(135deg,#4ecdc4,#0047AB);color:#fff}
+.diy-btn.go:disabled{opacity:.4;cursor:not-allowed}
+.diy-loading{text-align:center;padding:12px;font-size:.75rem;color:rgba(78,205,196,.6)}
+.diy-loading::after{content:'';display:inline-block;width:12px;height:12px;border:2px solid rgba(78,205,196,.3);border-top-color:#4ecdc4;border-radius:50%;animation:spin .6s linear infinite;margin-left:6px;vertical-align:middle}
+.ld-c{display:flex;align-items:center;justify-content:center;height:50vh;flex-direction:column;gap:8px}.ld-t{color:var(--dim);font-size:.78rem}
+.sp{width:24px;height:24px;border:3px solid var(--border);border-top-color:var(--ko);border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes fu{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="logo">🐯 韓文句型積木</div>
+<div class="sw"><button class="ub a" onclick="sU('tobi')">🐯 Tobi</button><button class="ub" onclick="sU('duri')">🐰 Duri</button><button class="ub" onclick="sU('gomi')">🐻 Gomi</button><button class="ub" onclick="sU('oliver')">🦊 Oliver</button></div>
+<div class="hn" id="hn"><button class="nb" onclick="nv(-1)">◀</button><input class="nc" id="nc" value="1/1" onclick="this.select()" onkeydown="if(event.key==='Enter')jumpTo(this.value)"><button class="nb" onclick="nv(1)">▶</button></div>
+<div class="lt"><button class="lb a-ko" onclick="sM('ko')">🇰🇷 韓文</button><button class="lb" onclick="sM('zhuyin')">📖 注音</button></div>
+<span class="badge pb" id="pb">✅ 0</span>
+<button class="gear-icon" id="verbBtn" onclick="openVerbTool()" title="韓文變形金剛">🤖</button><button class="gear-icon" id="gearBtn" onclick="openSet()">⚙️</button>
+</div>
+<div class="dt" id="dt"></div>
+<div id="app"><div class="ld-c"><div class="sp"></div><div class="ld-t">載入中…</div></div></div>
+<div class="set-overlay" id="setOv" onclick="if(event.target===this)closeSet()">
+<div class="set-box">
+<h3>⚙️ 設定</h3>
+<label>Google Gemini API Key</label>
+<input id="set-key" type="password" placeholder="AIzaSy..." value="">
+<div class="set-hint">
+🔑 到 <a href="https://aistudio.google.com/apikey" target="_blank" style="color:#ffd700">aistudio.google.com/apikey</a> 免費建立 API Key<br>
+🆓 免費額度每天 1,500 次，完全夠用！
+</div>
+<div class="set-btns">
+<button class="cancel" onclick="closeSet()">取消</button>
+<button class="save" onclick="saveSet()">💾 儲存</button>
+</div>
+</div>
+</div>
+<script>
+};
+  let h='<div style="padding:8px 0"><div style="font-size:.5rem;color:rgba(255,255,255,.25);margin-bottom:6px;text-align:right">🐯 Tobi AI 解析</div>';
+  for(const r of blocks){
+    const c=colorMap[r.type]||'#ffd700';
+    h+='<div style="padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05)">';
+    h+='<div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">';
+    h+='<span style="font-size:1rem;font-weight:800;color:'+c+'">'+eH(r.text)+'</span>';
+    h+='<span style="font-size:.55rem;padding:2px 6px;border-radius:4px;background:'+c+'22;color:'+c+';font-weight:700">'+eH(r.type)+'</span>';
+    h+='<span style="cursor:pointer;font-size:.8rem;opacity:.5" onclick="sp(\''+eH(r.text).replace(/'/g,"\\'")+'\')">🔊</span>';
+    h+='</div>';
+    if(r.orig&&r.orig!=='null'&&r.orig!==r.text){
+      h+='<div style="font-size:.65rem;color:rgba(255,255,255,.55);margin-top:3px">📍 原形：<span style="color:#ffd700;font-weight:700">'+eH(r.orig)+'</span></div>';
+    }
+    if(r.batchim&&r.batchim!=='null'){
+      const isF=r.batchim.includes('有');
+      h+='<div style="font-size:.65rem;color:rgba(255,255,255,.4)">'+(isF?'🦶 有腳（有收音）':'👟 沒腳（沒收音）')+'</div>';
+    }
+    if(r.harmony&&r.harmony!=='null'){
+      const sym=r.harmony.includes('陽')?'☀️':r.harmony.includes('하')?'⭐':'🌙';
+      h+='<div style="font-size:.65rem;color:rgba(255,255,255,.4)">'+sym+' '+eH(r.harmony)+'母音</div>';
+    }
+    if(r.role&&r.role!=='null'){
+      h+='<div style="font-size:.65rem;color:rgba(255,255,255,.35)">🏷️ '+eH(r.role);
+      if(r.desc&&r.desc!=='null')h+=' → '+eH(r.desc);
+      h+='</div>';
+    }
+    h+='</div>';
+  }
+  h+='</div>';
+  document.getElementById('xray-res').innerHTML=h;
+}
+
+// ─── Core rendering ───
+function eH(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function nl2br(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');}
+
+function sU(u){cu=u;const names={tobi:'Tobi',duri:'Duri',gomi:'Gomi',oliver:'Oliver'};document.querySelectorAll('.ub').forEach(b=>{b.classList.toggle('a',b.textContent.includes(names[u]||''));});uP();rn();}
+function uP(){document.getElementById('pb').textContent='✅ '+gS();}
+
+async function lD(){
+  try{const r=await fetch('korean-rules.json');if(!r.ok)throw 0;const d=await r.json();
+  R=d.map(r=>({id:r.id,dim:r.dimension_label,cn:r.chinese,
+    ko:r.ko?{s:r.ko.sentence,b:r.ko.blocks.map(b=>[b.text,b.role])}:null,
+    ct:r.contrast||{}}));
+  }catch{document.getElementById('app').innerHTML='<div class="ld-c"><div class="ld-t">請將 korean-rules.json 放在同目錄</div></div>';return;}
+  F=R;document.getElementById('nc').value='1/'+R.length;rDT();uP();rn();
+}
+
+function rDT(){
+  const ds={};R.forEach(r=>{ds[r.dim]=(ds[r.dim]||0)+1;});
+  const s=Object.entries(ds).sort((a,b)=>b[1]-a[1]);
+  let h='<button class="tab a" onclick="fD(\'all\')">全部 '+R.length+'</button>';
+  for(const[d,c]of s)h+='<button class="tab" onclick="fD(\''+d.replace(/'/g,"\\'")+'\')">'+d+' '+c+'</button>';
+  document.getElementById('dt').innerHTML=h;
+}
+
+function fD(d){
+  F=R;
+  if(d==='all'){ci=0;}else{const idx=R.findIndex(r=>r.dim===d);ci=idx>=0?idx:0;}
+  document.querySelectorAll('.tab').forEach(t=>{const td=t.textContent.replace(/\s*\d+$/,'').trim();t.classList.toggle('a',d==='all'?td.startsWith('全部'):td===d);});
+  rn();
+}
+
+function sM(m){md=m;document.querySelectorAll('.lb').forEach(b=>b.className='lb');const bs=document.querySelectorAll('.lb');
+if(m==='ko')bs[0].classList.add('a-ko');else bs[1].classList.add('a-zhuyin');rn();}
+
+function jumpTo(val){const m=val.match(/(\d+)/);if(m){const n=parseInt(m[1]);if(n>=1&&n<=F.length){ci=n-1;rn();}}document.getElementById('nc').blur();}
+function nv(d){ci=Math.max(0,Math.min(F.length-1,ci+d));rn();}
+function gT(i){ci=i;rn();}
+
+function addFootIndicator(text){
+  // Add 🦶/👟 indicators for zhuyin mode
+  let r='';
+  for(const ch of text){
+    const code=ch.charCodeAt(0);
+    if(code>=0xAC00&&code<=0xD7A3){
+      const hb=(code-0xAC00)%28!==0;
+      r+=ch+'<sup style="font-size:.4rem;opacity:.6">'+(hb?'🦶':'')+'</sup>';
+    } else {
+      r+=ch;
+    }
+  }
+  return r;
+}
+
+function rn(){
+  if(!F.length){document.getElementById('app').innerHTML='<div class="ld-c"><div class="ld-t">沒有符合的句子</div></div>';return;}
+  const r=F[ci];mS(r.id);uP();
+  const hk=!!KT[r.dim];
+  
+  // Build blocks
+  let bh='';
+  if(r.ko){
+    bh='<div class="br">';
+    r.ko.b.forEach(([t,rl])=>{
+      const lastChar=t[t.length-1];
+      const foot=(lastChar&&lastChar.charCodeAt(0)>=0xAC00&&lastChar.charCodeAt(0)<=0xD7A3)?((lastChar.charCodeAt(0)-0xAC00)%28!==0?'🦶':''):'';
+      const display=md==='zhuyin'?addFootIndicator(t):t;
+      bh+='<div class="bk bk-ko r-'+rl+'" onclick="sp(\''+t.replace(/'/g,"\\'")+'\');showPhonics(this,\''+t.replace(/'/g,"\\'")+'\')">'
+        +display
+        +'<span class="bk-r">'+rl+'</span>'
+        +(foot?'<span class="bk-foot">'+foot+'</span>':'')
+        +'</div>';
+    });
+    bh+='</div>';
+    bh+='<div style="text-align:center;padding:4px 0 6px"><button class="sf" onclick="sp(\''+r.ko.s.replace(/'/g,"\\'")+'\')">🔊 '+eH(r.ko.s)+'</button></div>';
+  }
+  
+  // Contrast box
+  let ct='';
+  if(r.ct&&(r.ct.cn_blindspot||r.ct.ko_insight)){
+    ct='<div class="cb">';
+    if(r.ct.cn_blindspot)ct+='<div><span class="cl" style="color:var(--cn)">🇹🇼 中文陷阱：</span>'+eH(r.ct.cn_blindspot)+'</div>';
+    if(r.ct.ko_insight)ct+='<div><span class="cl" style="color:var(--ko)">🇰🇷 韓文邏輯：</span>'+eH(r.ct.ko_insight)+'</div>';
+    ct+='</div>';
+  }
+  
+  // Dots
+  const mx=Math.min(F.length,30);
+  let dt='<div class="dr">';
+  for(let i=0;i<mx;i++){
+    const dc=i===ci?' a-ko':'';
+    const sn=iS(F[i].id)?' sn':'';
+    dt+='<div class="d'+dc+sn+'" onclick="gT('+i+')"></div>';
+  }
+  if(F.length>mx)dt+='<span style="color:var(--dim);font-size:.48rem;align-self:center">+'+(F.length-mx)+'</span>';
+  dt+='</div>';
+  
+  // Legend
+  const lg='<div class="lg"><div class="li"><div class="ld" style="background:#ff6b6b"></div>主角</div><div class="li"><div class="ld" style="background:#4ecdc4"></div>動作</div><div class="li"><div class="ld" style="background:#ffd93d"></div>對象</div><div class="li"><div class="ld" style="background:#a78bfa"></div>修飾</div><div class="li"><div class="ld" style="background:#66bb6a"></div>場景</div><div class="li"><div class="ld" style="background:#ff9800"></div>目標</div><div class="li"><div class="ld" style="background:#42a5f5"></div>時間</div><div class="li"><div class="ld" style="background:#ef5350"></div>語氣</div></div>';
+  
+  document.getElementById('app').innerHTML='<div class="mc m-'+md+'"><div class="ca"><div class="cs">'+eH(r.cn)+'</div><div class="cd">'+eH(r.dim)+'</div></div><div class="ba">'+bh+'</div>'+ct+lg+'</div>'+gKI(r)+dt;
+  document.getElementById('nc').value=(ci+1)+'/'+F.length;
+  var nb=document.querySelectorAll('.nb');if(nb[0])nb[0].disabled=ci===0;if(nb[1])nb[1].disabled=ci>=F.length-1;
+  document.querySelectorAll('.tab').forEach(function(t){var td=t.textContent.replace(/\s*\d+$/,'').trim();t.classList.toggle('a',td===r.dim);});
+}
+
+function gKI(r){
+  const d=KT[r.dim];
+  if(!d)return '';
+  return '<div class="ki"><div style="padding:10px 14px 6px;display:flex;align-items:center;justify-content:center;gap:6px;flex-wrap:wrap"><span style="font-size:1.4rem">'+d.m+'</span><span style="font-size:.75rem;font-weight:900;color:#ffd700">'+d.m+' '+d.t+' 的韓文魔法教室</span><span style="font-size:1rem;font-weight:900;color:#7eeae0">'+d.mt+'</span></div><div class="ki-b ki-cn"><span class="ki-fl">🇹🇼 中文大腦怎麼想</span>'+nl2br(d.cn)+'</div><div class="ki-b ki-ko"><span class="ki-fl">🇰🇷 韓文大腦怎麼想</span>'+nl2br(d.br)+'</div><div class="ki-tp">'+nl2br(d.tp)+'</div></div>';
+}
+
+// ─── Event handlers ───
+document.addEventListener('keydown',e=>{
+  const t=e.target;if(t.tagName==='INPUT'||t.tagName==='TEXTAREA')return;
+  if(e.key==='ArrowLeft')nv(-1);
+  if(e.key==='ArrowRight')nv(1);
+  if(e.key===' '||e.code==='Space'){e.preventDefault();const r=F[ci];if(r&&r.ko)sp(r.ko.s);return;}
+  if(e.key==='1')sM('ko');
+  if(e.key==='2')sM('zhuyin');
+},true);
+
+let wT=0;document.addEventListener('wheel',e=>{
+  if(e.target.closest('.ki')||e.target.closest('.cb')||e.target.closest('.verb-modal'))return;
+  const now=Date.now();if(now-wT<300)return;wT=now;
+  if(e.deltaY<0)nv(1);else if(e.deltaY>0)nv(-1);
+  e.preventDefault();
+},{passive:false});
+
+let tX=0;
+document.addEventListener('touchstart',e=>{tX=e.touches[0].clientX;});
+document.addEventListener('touchend',e=>{
+  if(e.target.closest('.tab')||e.target.closest('.ub')||e.target.closest('.lb')||e.target.closest('.nb')||e.target.closest('.hn')||e.target.closest('.ki')||e.target.closest('.verb-modal')||e.target.closest('button')||e.target.closest('input'))return;
+  const d=e.changedTouches[0].clientX-tX;
+  if(Math.abs(d)>60)nv(d>0?-1:1);
+});
+
+// ─── Init ───
+lD();
+updGear();
+if('serviceWorker' in navigator){navigator.serviceWorker.register('sw.js?v=1').catch(()=>{});}
+</script>
+</body>
+</html>
