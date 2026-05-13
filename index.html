@@ -76,6 +76,30 @@
 .set-box .set-btns button{padding:8px 20px;border-radius:9px;border:none;font-weight:900;font-size:.75rem;cursor:pointer;font-family:inherit}
 .set-box .set-btns .save{background:linear-gradient(135deg,#ffd700,#ff9800);color:#1a1a2e}
 .set-box .set-btns .cancel{background:rgba(255,255,255,.08);color:rgba(255,255,255,.5)}
+.s40-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:99998;display:none;align-items:center;justify-content:center;padding:8px}
+.s40-overlay.show{display:flex}
+.s40-modal{background:var(--card);border-radius:16px;padding:12px 14px;max-width:480px;width:100%;max-height:90vh;overflow:auto;border:1px solid rgba(255,215,0,.2);box-shadow:0 10px 40px rgba(0,0,0,.5)}
+.s40-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.s40-h span{font-size:.85rem;font-weight:900;color:#ffd700}.s40-h button{background:none;border:none;color:rgba(255,255,255,.5);font-size:1.1rem;cursor:pointer;padding:4px 8px;border-radius:6px}.s40-h button:hover{color:#fff;background:rgba(255,255,255,.1)}
+.s40-tabs{display:flex;gap:4px;margin-bottom:10px}.s40-tab{flex:1;padding:6px 0;border:1px solid rgba(255,255,255,.1);border-radius:8px;background:transparent;color:rgba(255,255,255,.4);font-size:.72rem;font-weight:700;cursor:pointer;font-family:inherit}.s40-tab.a{background:rgba(255,215,0,.15);color:#ffd700;border-color:rgba(255,215,0,.3)}
+.fam{margin-bottom:10px;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.05)}
+.fam-t{font-size:.72rem;font-weight:900;margin-bottom:6px;display:flex;align-items:center;gap:4px}
+.fam-row{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:4px}
+.sc{width:52px;padding:6px 2px;border-radius:8px;border:1.5px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);text-align:center;cursor:pointer;transition:all .15s}
+.sc:hover{transform:translateY(-2px);border-color:rgba(78,205,196,.4);background:rgba(78,205,196,.06)}
+.sc:active{transform:scale(.95)}
+.sc-h{font-size:1.2rem;font-weight:900;color:#a8ece8;line-height:1.2}
+.sc-z{font-size:.55rem;color:#ffd700;font-weight:700}
+.sc-n{font-size:.42rem;color:rgba(255,255,255,.3);line-height:1.1;margin-top:1px}
+.sc.plain{border-color:rgba(78,205,196,.2)}.sc.asp{border-color:rgba(255,169,77,.3)}.sc.tens{border-color:rgba(255,107,107,.3)}
+.sc.yang{border-color:rgba(255,215,0,.3)}.sc.yin{border-color:rgba(156,136,255,.3)}.sc.combo{border-color:rgba(168,236,224,.2)}
+.sc-pop{position:fixed;z-index:99999;background:#1a1a35;border:1.5px solid rgba(255,215,0,.4);border-radius:14px;padding:12px 16px;min-width:240px;max-width:320px;box-shadow:0 12px 32px rgba(0,0,0,.6);animation:fu .2s ease}
+.sc-pop .pop-big{font-size:2.5rem;font-weight:900;text-align:center;color:#a8ece8}
+.sc-pop .pop-zh{font-size:1.2rem;font-weight:900;text-align:center;color:#ffd700;margin:2px 0}
+.sc-pop .pop-name{font-size:.65rem;color:rgba(255,255,255,.4);text-align:center;margin-bottom:6px}
+.sc-pop .pop-desc{font-size:.78rem;line-height:1.6;color:rgba(255,255,255,.75);padding:6px 0;border-top:1px solid rgba(255,255,255,.08)}
+.sc-pop .pop-fam{display:flex;gap:6px;justify-content:center;margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.08)}
+.sc-pop .pop-fam-item{padding:4px 10px;border-radius:6px;font-size:.75rem;font-weight:700;text-align:center}
+.sc-pop .pop-close{position:absolute;top:4px;right:8px;background:none;border:none;color:rgba(255,255,255,.3);font-size:.85rem;cursor:pointer}
 .verb-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);backdrop-filter:blur(4px);z-index:99998;display:none;align-items:center;justify-content:center;padding:16px}
 .verb-overlay.show{display:flex}
 .verb-modal{background:var(--card);border-radius:16px;padding:16px 18px;max-width:420px;width:100%;max-height:85vh;overflow:auto;border:1px solid rgba(255,215,0,.2);box-shadow:0 10px 40px rgba(0,0,0,.5)}
@@ -102,7 +126,7 @@
 <div class="hn" id="hn"><button class="nb" onclick="nv(-1)">◀</button><input class="nc" id="nc" value="1/1" onclick="this.select()" onkeydown="if(event.key==='Enter')jumpTo(this.value)"><button class="nb" onclick="nv(1)">▶</button></div>
 <div class="lt"><button class="lb a-ko" onclick="sM('ko')">🇰🇷 韓文</button><button class="lb" onclick="sM('zhuyin')">📖 注音</button></div>
 <span class="badge pb" id="pb">✅ 0</span>
-<button class="gear-icon" id="verbBtn" onclick="openVerbTool()" title="韓文變形金剛">🤖</button><button class="gear-icon" id="gearBtn" onclick="openSet()">⚙️</button>
+<button class="gear-icon" id="soundBtn" onclick="open40Sound()" title="40音家族圖鑑">🔤</button><button class="gear-icon" id="verbBtn" onclick="openVerbTool()" title="韓文變形金剛">🤖</button><button class="gear-icon" id="gearBtn" onclick="openSet()">⚙️</button>
 </div>
 <div class="dt" id="dt"></div>
 <div id="app"><div class="ld-c"><div class="sp"></div><div class="ld-t">載入中…</div></div></div>
@@ -174,6 +198,189 @@ function showConjResultKo(r){let h='<div style="padding:6px 0"><div style="font-
 function xrayKo(){const inp=document.getElementById('xray-in');if(!inp)return;const s=inp.value.trim();if(!s)return;const apiKey=getApiKey();if(!apiKey){document.getElementById('xray-res').innerHTML='<div style="color:#ff9800;font-size:.75rem;padding:6px">需要 Gemini API Key → ⚙️</div>';return;}document.getElementById('xray-res').innerHTML='<div class="diy-loading">🐯 解析中</div>';const prompt='你是韓文文法X光機。將韓文句子拆解成積木。\n名詞與助詞分開。標註收音（有腳/沒腳）和陰陽母音。\n回覆純JSON：[{"text":"詞","type":"分類","role":"角色","desc":"說明","orig":"原形或null","batchim":"有腳/沒腳/null","harmony":"陽/陰/하다/null"}]\n\n韓文：'+s;fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key='+encodeURIComponent(apiKey),{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({contents:[{parts:[{text:prompt}]}],generationConfig:{maxOutputTokens:2000,temperature:0.1,thinkingConfig:{thinkingBudget:0}}})}).then(r=>r.json()).then(data=>{const raw=data.candidates?.[0]?.content?.parts?.map(p=>p.text||'').join('')||'';const cleaned=raw.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();try{renderXrayKo(JSON.parse(cleaned));}catch(e){document.getElementById('xray-res').innerHTML='<div style="color:#ff6b6b;font-size:.75rem;padding:6px">解析失敗</div>';}}).catch(()=>{document.getElementById('xray-res').innerHTML='<div style="color:#ff6b6b;font-size:.75rem;padding:6px">API 錯誤</div>';});}
 
 function renderXrayKo(blocks){const colorMap={'名詞':'#ffd700','助詞':'#7eeae0','動詞變形':'#ff8a8a','形容詞變形':'#ffb347','副詞':'#a8d8ea','標點':'#888'};let h='<div style="padding:8px 0"><div style="font-size:.5rem;color:rgba(255,255,255,.25);margin-bottom:6px;text-align:right">🐯 AI 解析</div>';for(const r of blocks){const c=colorMap[r.type]||'#ffd700';h+='<div style="padding:6px 0;border-bottom:1px solid rgba(255,255,255,.05)"><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span style="font-size:1rem;font-weight:800;color:'+c+'">'+eH(r.text)+'</span><span style="font-size:.55rem;padding:2px 6px;border-radius:4px;background:'+c+'22;color:'+c+';font-weight:700">'+eH(r.type)+'</span><span style="cursor:pointer;font-size:.8rem;opacity:.5" onclick="sp(\''+eH(r.text).replace("'","\\'")+'\')">🔊</span></div>';if(r.orig&&r.orig!=='null'&&r.orig!==r.text)h+='<div style="font-size:.65rem;color:rgba(255,255,255,.55);margin-top:3px">📍 原形：<span style="color:#ffd700;font-weight:700">'+eH(r.orig)+'</span></div>';if(r.batchim&&r.batchim!=='null'){const isF=r.batchim.includes('有');h+='<div style="font-size:.65rem;color:rgba(255,255,255,.4)">'+(isF?'🦶 有腳':'👟 沒腳')+'</div>';}if(r.harmony&&r.harmony!=='null'){const sym=r.harmony.includes('陽')?'☀️':r.harmony.includes('하')?'⭐':'🌙';h+='<div style="font-size:.65rem;color:rgba(255,255,255,.4)">'+sym+' '+eH(r.harmony)+'</div>';}if(r.role&&r.role!=='null')h+='<div style="font-size:.65rem;color:rgba(255,255,255,.35)">🏷️ '+eH(r.role)+(r.desc&&r.desc!=='null'?' → '+eH(r.desc):'')+'</div>';h+='</div>';}h+='</div>';document.getElementById('xray-res').innerHTML=h;}
+
+
+// ─── 40 Sound Family System ───
+const CONSONANTS=[
+{h:"ㄱ",z:"ㄍ/ㄎ",name:"기역",type:"plain",fam:"gun",emoji:"🔫",desc:"普通手槍！\n舌頭頂住上顎後面，輕輕放開。\n跟注音的ㄍ很像，但韓文在字首會聽起來像ㄎ！",famDesc:"🔫 ㄍㄎ家族（像一把槍）"},
+{h:"ㅋ",z:"ㄎ",name:"키읔",type:"asp",fam:"gun",emoji:"🔫💨",desc:"機關槍！中間多一橫＝多噴氣💨\n發的時候要把口水噴出來！\n手放嘴巴前面要感覺到風！",famDesc:"🔫 ㄍㄎ家族"},
+{h:"ㄲ",z:"ㄍㄍ",name:"쌍기역",type:"tens",fam:"gun",emoji:"🔫🔫",desc:"雙管手槍！兩個ㄱ排排站！\n肚子用力憋氣💪，像被嚇到的「ㄍ！」\n聽起來比ㄱ更緊更短！",famDesc:"🔫 ㄍㄎ家族"},
+{h:"ㄷ",z:"ㄉ/ㄊ",name:"디귿",type:"plain",fam:"c",emoji:"🌙",desc:"像個大寫的C（月亮）！\n舌尖頂住上牙齒後面輕輕放開。\n跟注音的ㄉ很像！",famDesc:"🌙 ㄉㄊ家族（像月亮）"},
+{h:"ㅌ",z:"ㄊ",name:"티읕",type:"asp",fam:"c",emoji:"🌙💨",desc:"加強版月亮！多一橫＝多噴氣💨\n舌頭位置跟ㄷ一樣，但要用力吐氣！",famDesc:"🌙 ㄉㄊ家族"},
+{h:"ㄸ",z:"ㄉㄉ",name:"쌍디귿",type:"tens",fam:"c",emoji:"🌙🌙",desc:"雙胞胎月亮！肚子用力憋氣💪\n像被嚇到的「ㄉ！」",famDesc:"🌙 ㄉㄊ家族"},
+{h:"ㅂ",z:"ㄅ/ㄆ",name:"비읍",type:"plain",fam:"cup",emoji:"🥤",desc:"像個杯子！\n嘴巴閉起來再打開，跟注音ㄅ很像！",famDesc:"🥤 ㄅㄆ家族（像杯子）"},
+{h:"ㅍ",z:"ㄆ",name:"피읖",type:"asp",fam:"cup",emoji:"🥤💨",desc:"長了腳的杯子！（底下多一橫）\n嘴巴閉起來用力吐氣💨打開！",famDesc:"🥤 ㄅㄆ家族"},
+{h:"ㅃ",z:"ㄅㄅ",name:"쌍비읍",type:"tens",fam:"cup",emoji:"🥤🥤",desc:"兩個杯子排排站！\n嘴巴閉起來肚子用力💪！",famDesc:"🥤 ㄅㄆ家族"},
+{h:"ㅈ",z:"ㄐ/ㄗ",name:"지읒",type:"plain",fam:"slide",emoji:"⛷️",desc:"人字型溜滑梯加蓋子！\n舌尖頂住上顎，跟注音ㄐ或ㄗ很像！",famDesc:"⛷️ ㄐㄑ家族（溜滑梯）"},
+{h:"ㅊ",z:"ㄑ/ㄘ",name:"치읓",type:"asp",fam:"slide",emoji:"⛷️💨",desc:"戴帽子的溜滑梯！頭上多一點！\n跟ㅈ位置一樣但要噴氣💨！",famDesc:"⛷️ ㄐㄑ家族"},
+{h:"ㅉ",z:"ㄐㄐ",name:"쌍지읒",type:"tens",fam:"slide",emoji:"⛷️⛷️",desc:"雙胞胎溜滑梯！肚子用力💪！\n像被嚇到的「ㄐ！」",famDesc:"⛷️ ㄐㄑ家族"},
+{h:"ㅅ",z:"ㄙ",name:"시옷",type:"plain",fam:"hat",emoji:"🏔️",desc:"像一座山⛰️！\n氣從牙縫吹出來，跟注音ㄙ很像！",famDesc:"🏔️ ㄙ家族（一座山）"},
+{h:"ㅆ",z:"ㄙㄙ",name:"쌍시옷",type:"tens",fam:"hat",emoji:"🏔️🏔️",desc:"雙胞胎山！肚子用力💪！\n像很生氣的「ㄙ！」",famDesc:"🏔️ ㄙ家族"},
+{h:"ㅁ",z:"ㄇ",name:"미음",type:"other",fam:"mouth",emoji:"📦",desc:"長得像四方形的嘴巴📦！\n嘴巴閉起來讓聲音從鼻子出來～\n跟注音ㄇ一模一樣！",famDesc:"🎈 其他好朋友"},
+{h:"ㄴ",z:"ㄋ",name:"니은",type:"other",fam:"nose",emoji:"👃",desc:"長得像鼻子的側面👃！\n舌尖頂住上牙後面，聲音從鼻子出來～\n跟注音ㄋ一模一樣！",famDesc:"🎈 其他好朋友"},
+{h:"ㅇ",z:"(無)/ㄥ",name:"이응",type:"other",fam:"zero",emoji:"⭕",desc:"長得像數字「0」！\n🔝 放上面：不發音（佔位用）\n🔽 當腳腳：發喉嚨音「ㄥ」\n一個字母兩種功能！",famDesc:"🎈 其他好朋友"},
+{h:"ㄹ",z:"ㄌ/ㄖ",name:"리을",type:"other",fam:"light",emoji:"⚡",desc:"像彎曲的閃電⚡！\n舌頭輕輕碰上顎再彈開！\n在ㄴ前面會一起變成ㄹㄹ！",famDesc:"🎈 其他好朋友"},
+{h:"ㅎ",z:"ㄏ",name:"히읗",type:"other",fam:"hat2",emoji:"🎩",desc:"戴帽子的圈圈🎩！\n嘴巴張開哈一口氣「ㄏ～」\n跟注音ㄏ一模一樣！",famDesc:"🎈 其他好朋友"}
+];
+
+const VOWELS=[
+{h:"ㅏ",z:"ㄚ",name:"아",type:"yang",emoji:"👉",desc:"向右比👉！\n嘴巴張大喊「ㄚ～」\n棒子在右邊＝陽母音☀️"},
+{h:"ㅑ",z:"ㄧㄚ",name:"야",type:"yang",emoji:"👉👉",desc:"向右比兩根手指👉👉！\n多一根短棒就多一個「ㄧ」的音！\nㄧ+ㄚ＝ㄧㄚ！"},
+{h:"ㅓ",z:"ㄜ",name:"어",type:"yin",emoji:"👈",desc:"向左比👈！\n嘴巴微開發「ㄜ」的音！\n棒子在左邊＝陰母音🌙"},
+{h:"ㅕ",z:"ㄧㄜ",name:"여",type:"yin",emoji:"👈👈",desc:"向左比兩根👈👈！\nㄧ+ㄜ＝ㄧㄜ！"},
+{h:"ㅗ",z:"ㄛ",name:"오",type:"yang",emoji:"☝️",desc:"向上飛☝️！\n嘴巴圓圓的發「ㄛ」！\n棒子朝上＝陽母音☀️"},
+{h:"ㅛ",z:"ㄧㄛ",name:"요",type:"yang",emoji:"☝️☝️",desc:"向上飛兩根☝️☝️！\nㄧ+ㄛ＝ㄧㄛ！"},
+{h:"ㅜ",z:"ㄨ",name:"우",type:"yin",emoji:"👇",desc:"向下鑽👇！\n嘴巴圓圓往前噘發「ㄨ」！\n棒子朝下＝陰母音🌙"},
+{h:"ㅠ",z:"ㄧㄨ",name:"유",type:"yin",emoji:"👇👇",desc:"向下鑽兩根👇👇！\nㄧ+ㄨ＝ㄧㄨ！"},
+{h:"ㅡ",z:"ㄜ(扁)",name:"으",type:"yin",emoji:"😬",desc:"最難魔王😬！平平的地板！\n嘴巴像說「一」拉到最扁，\n但發出肚子被揍的「ㄜ」！"},
+{h:"ㅣ",z:"ㄧ",name:"이",type:"yin",emoji:"🧍",desc:"站直直的人🧍！\n嘴巴往兩邊拉開發「ㄧ」！\n最簡單的母音！"},
+{h:"ㅐ",z:"ㄝ",name:"애",type:"combo",emoji:"🔀",desc:"ㅏ+ㅣ組合！\n但現代韓國人唸起來跟ㅔ一模一樣！\n直接記「ㄝ」就好！"},
+{h:"ㅔ",z:"ㄝ",name:"에",type:"combo",emoji:"🔀",desc:"ㅓ+ㅣ組合！\n跟ㅐ發音一樣→都唸「ㄝ」！\n韓國人自己也分不清！"},
+{h:"ㅒ",z:"ㄧㄝ",name:"얘",type:"combo",emoji:"🔀",desc:"ㅑ+ㅣ組合！\n跟ㅖ發音一樣→都唸「ㄧㄝ」！"},
+{h:"ㅖ",z:"ㄧㄝ",name:"예",type:"combo",emoji:"🔀",desc:"ㅕ+ㅣ組合！\n跟ㅒ發音一樣→都唸「ㄧㄝ」！\n예＝是（禮貌回答）！"},
+{h:"ㅘ",z:"ㄨㄚ",name:"와",type:"combo",emoji:"🤩",desc:"ㅗ+ㅏ組合＝ㄨ+ㄚ＝ㄨㄚ！\n嘴巴先圓再張開！\n와～（哇～）就是這個音！"},
+{h:"ㅝ",z:"ㄨㄜ",name:"워",type:"combo",emoji:"🔄",desc:"ㅜ+ㅓ組合＝ㄨ+ㄜ＝ㄨㄜ！\n嘴巴先圓再微開！"},
+{h:"ㅟ",z:"ㄨㄧ",name:"위",type:"combo",emoji:"🫢",desc:"ㅜ+ㅣ組合＝ㄨ+ㄧ＝ㄨㄧ！\n像法文的 u！\n嘴巴圓圓說ㄧ！"},
+{h:"ㅙ",z:"ㄨㄝ",name:"왜",type:"combo",emoji:"🤷",desc:"ㅗ+ㅐ組合→ㄨㄝ！\n왜＝為什麼？🤷\n跟ㅚ和ㅞ發音幾乎一樣！"},
+{h:"ㅚ",z:"ㄨㄝ",name:"외",type:"combo",emoji:"🤷",desc:"ㅗ+ㅣ組合→現代也唸ㄨㄝ！\n外(외)國(국)的외就是這個！\n三胞胎：ㅙ＝ㅚ＝ㅞ！"},
+{h:"ㅞ",z:"ㄨㄝ",name:"웨",type:"combo",emoji:"🤷",desc:"ㅜ+ㅔ組合→也唸ㄨㄝ！\n三胞胎最後一個！\n웨딩(Wedding)！"},
+{h:"ㅢ",z:"ㄜㄧ",name:"의",type:"combo",emoji:"🦎",desc:"百變怪魔王🦎！三種唸法：\n🔝 字首→唸으+이(eui)\n📍 字中字尾→唸이(i)\n💫 當「的」→唸에(e)\n나의 학교→나에 학교(我的學校)"}
+];
+
+function open40Sound(){
+  let ov=document.getElementById('s40-overlay');
+  if(ov){ov.classList.add('show');return;}
+  ov=document.createElement('div');ov.id='s40-overlay';ov.className='s40-overlay show';
+  let h='<div class="s40-modal"><div class="s40-h"><span>🐯 40音家族圖鑑</span><button onclick="close40Sound()">✕</button></div>';
+  h+='<div class="s40-tabs"><button class="s40-tab a" onclick="sw40(0)">🔤 子音19</button><button class="s40-tab" onclick="sw40(1)">🪵 母音21</button></div>';
+  // Tab 0: Consonants
+  h+='<div id="s40t0" class="s40-p">';
+  h+=renderConsonants();
+  h+='</div>';
+  // Tab 1: Vowels
+  h+='<div id="s40t1" class="s40-p" style="display:none">';
+  h+=renderVowels();
+  h+='</div>';
+  h+='</div>';
+  ov.innerHTML=h;
+  ov.addEventListener('click',function(e){if(e.target===ov)close40Sound();});
+  document.body.appendChild(ov);
+}
+function sw40(n){document.querySelectorAll('.s40-tab').forEach((b,i)=>b.classList.toggle('a',i===n));document.querySelectorAll('.s40-p').forEach((p,i)=>p.style.display=i===n?'block':'none');}
+function close40Sound(){const ov=document.getElementById('s40-overlay');if(ov)ov.classList.remove('show');}
+
+function renderConsonants(){
+  let h='<div style="font-size:.55rem;color:rgba(255,255,255,.3);margin-bottom:6px;text-align:center">點擊任何字母聽發音＆看詳細解說！</div>';
+  // Group by family
+  const fams=[
+    {name:"🔫 ㄍㄎ家族（像一把槍）",key:"gun"},
+    {name:"🌙 ㄉㄊ家族（像月亮）",key:"c"},
+    {name:"🥤 ㄅㄆ家族（像杯子）",key:"cup"},
+    {name:"⛷️ ㄐㄑ家族（溜滑梯）",key:"slide"},
+    {name:"🏔️ ㄙ家族（一座山）",key:"hat"},
+    {name:"🎈 其他好朋友",key:"other"}
+  ];
+  const typeLabels={plain:"普通版",asp:"💨噴氣版",tens:"💪憋氣版",other:""};
+  const typeColors={plain:"#4ecdc4",asp:"#ffa94d",tens:"#ff6b6b",other:"#a8ece8"};
+  for(const fm of fams){
+    const members=CONSONANTS.filter(c=>c.fam===fm.key||(fm.key==="other"&&["mouth","nose","zero","light","hat2"].includes(c.fam)));
+    h+='<div class="fam"><div class="fam-t" style="color:#ffd700">'+fm.name+'</div>';
+    if(fm.key!=="other"){
+      h+='<div style="display:flex;gap:2px;margin-bottom:4px">';
+      h+='<span style="font-size:.5rem;padding:1px 6px;border-radius:4px;background:rgba(78,205,196,.1);color:#4ecdc4">普通版</span>';
+      h+='<span style="font-size:.5rem;padding:1px 6px;border-radius:4px;background:rgba(255,169,77,.1);color:#ffa94d">💨噴氣版</span>';
+      h+='<span style="font-size:.5rem;padding:1px 6px;border-radius:4px;background:rgba(255,107,107,.1);color:#ff6b6b">💪憋氣版</span>';
+      h+='</div>';
+    }
+    h+='<div class="fam-row">';
+    for(const c of members){
+      h+='<div class="sc '+c.type+'" onclick="show40Pop(this,\'c\','+CONSONANTS.indexOf(c)+')">';
+      h+='<div class="sc-h">'+c.h+'</div>';
+      h+='<div class="sc-z">'+c.z+'</div>';
+      h+='<div class="sc-n">'+c.emoji+' '+c.name+'</div>';
+      h+='</div>';
+    }
+    h+='</div></div>';
+  }
+  return h;
+}
+
+function renderVowels(){
+  let h='<div style="font-size:.55rem;color:rgba(255,255,255,.3);margin-bottom:6px;text-align:center">點擊任何字母聽發音＆看詳細解說！</div>';
+  const groups=[
+    {name:"👉👈 站直直的人（向右/向左比）",idxs:[0,1,2,3]},
+    {name:"☝️👇 平躺的地板（向上/向下指）",idxs:[4,5,6,7]},
+    {name:"😬🧍 最基礎兩根棒子",idxs:[8,9]},
+    {name:"🔀 發音＝ㄝ（合併記！）",idxs:[10,11]},
+    {name:"🔀 發音＝ㄧㄝ（合併記！）",idxs:[12,13]},
+    {name:"🤩 組合母音",idxs:[14,15,16]},
+    {name:"🤷 三胞胎都唸ㄨㄝ（合併記！）",idxs:[17,18,19]},
+    {name:"🦎 百變怪魔王",idxs:[20]}
+  ];
+  for(const g of groups){
+    h+='<div class="fam"><div class="fam-t" style="color:#ffd700">'+g.name+'</div><div class="fam-row">';
+    for(const i of g.idxs){
+      const v=VOWELS[i];
+      const cls=v.type==='yang'?'yang':v.type==='yin'?'yin':'combo';
+      h+='<div class="sc '+cls+'" onclick="show40Pop(this,\'v\','+i+')">';
+      h+='<div class="sc-h">'+v.h+'</div>';
+      h+='<div class="sc-z">'+v.z+'</div>';
+      h+='<div class="sc-n">'+v.emoji+' '+v.name+'</div>';
+      h+='</div>';
+    }
+    h+='</div></div>';
+  }
+  h+='<div style="display:flex;gap:6px;justify-content:center;margin:6px 0;font-size:.5rem">';
+  h+='<span style="padding:2px 8px;border-radius:4px;background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.2);color:#ffd700">☀️陽母音</span>';
+  h+='<span style="padding:2px 8px;border-radius:4px;background:rgba(156,136,255,.08);border:1px solid rgba(156,136,255,.2);color:#9c88ff">🌙陰母音</span>';
+  h+='<span style="padding:2px 8px;border-radius:4px;background:rgba(168,236,224,.08);border:1px solid rgba(168,236,224,.2);color:#a8ece8">🔀組合母音</span>';
+  h+='</div>';
+  return h;
+}
+
+function show40Pop(el,type,idx){
+  document.querySelectorAll('.sc-pop').forEach(p=>p.remove());
+  const item=type==='c'?CONSONANTS[idx]:VOWELS[idx];
+  // Speak the sound
+  const sample=type==='c'?(item.h+'ㅏ'):('ㅇ'+item.h);
+  sp(sample);
+  
+  const pop=document.createElement('div');pop.className='sc-pop';
+  let h='<button class="pop-close" onclick="this.parentElement.remove()">✕</button>';
+  h+='<div class="pop-big">'+item.h+'</div>';
+  h+='<div class="pop-zh">'+item.z+'</div>';
+  h+='<div class="pop-name">'+item.emoji+' '+item.name+'</div>';
+  h+='<div class="pop-desc">'+item.desc.replace(/\n/g,'<br>')+'</div>';
+  
+  // Show family members for consonants
+  if(type==='c'){
+    const siblings=CONSONANTS.filter(c=>c.fam===item.fam&&c.h!==item.h);
+    if(siblings.length>0){
+      h+='<div class="pop-fam">';
+      const colors={plain:'rgba(78,205,196,.15)',asp:'rgba(255,169,77,.15)',tens:'rgba(255,107,107,.15)',other:'rgba(168,236,224,.1)'};
+      const labels={plain:'普通版',asp:'💨噴氣版',tens:'💪憋氣版',other:''};
+      h+='<div class="pop-fam-item" style="background:'+({plain:'rgba(78,205,196,.15)',asp:'rgba(255,169,77,.15)',tens:'rgba(255,107,107,.15)',other:'rgba(168,236,224,.1)'}[item.type]||'rgba(168,236,224,.1)')+'"><div style="font-size:1.1rem">'+item.h+'</div><div style="font-size:.5rem;opacity:.6">👈 現在</div></div>';
+      for(const s of siblings){
+        h+='<div class="pop-fam-item" style="background:'+(colors[s.type]||colors.other)+';cursor:pointer;opacity:.7" onclick="show40Pop(this,\'c\','+CONSONANTS.indexOf(s)+')"><div style="font-size:1.1rem">'+s.h+'</div><div style="font-size:.5rem;opacity:.6">'+(labels[s.type]||s.name)+'</div></div>';
+      }
+      h+='</div>';
+    }
+  }
+  
+  // Speak button
+  h+='<div style="text-align:center;margin-top:8px"><button style="padding:4px 16px;border-radius:8px;border:1px solid rgba(78,205,196,.3);background:rgba(78,205,196,.08);color:#a8ece8;font-size:.72rem;cursor:pointer;font-family:inherit" onclick="sp(\''+sample+'\')">🔊 再聽一次</button></div>';
+  
+  pop.innerHTML=h;
+  document.body.appendChild(pop);
+  // Position near center
+  pop.style.left='50%';pop.style.top='50%';pop.style.transform='translate(-50%,-50%)';
+  // Close on outside click after a delay
+  setTimeout(()=>{
+    const closer=function(e){if(!pop.contains(e.target)){pop.remove();document.removeEventListener('click',closer);}};
+    document.addEventListener('click',closer);
+  },100);
+}
+
 
 function eH(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function nl2br(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\n/g,'<br>');}
