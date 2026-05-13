@@ -1,4 +1,4 @@
-const CACHE_NAME = 'korean-lab-v2';
+const CACHE_NAME = 'korean-lab-v3';
 const ASSETS = [
   './',
   './index.html',
