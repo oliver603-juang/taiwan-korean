@@ -1,10 +1,10 @@
 [
   {
-    "id": "ko_particle_batchim_001",
-    "dimension_label": "助詞：有沒有腳腳？",
-    "chinese": "我吃西瓜。",
+    "id": "ko_batchim_001",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "我玩麥塊。",
     "ko": {
-      "sentence": "저는 수박을 먹어요.",
+      "sentence": "저는 마크를 해요.",
       "blocks": [
         {
           "text": "저",
@@ -15,254 +15,578 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 (無收音) ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "수박",
+          "text": "마크",
           "role": "對象",
-          "base": "수박"
-        },
-        {
-          "text": "을 ",
-          "role": "助詞",
-          "base": "을",
-          "grammar_note": "有腳腳 (有收音 ㄱ) ➡️ 貼 을"
-        },
-        {
-          "text": "먹어요.",
-          "role": "動作",
-          "base": "먹다",
-          "grammar_note": "陰母音 ㅓ ➡️ 穿上 어요"
-        }
-      ],
-      "formula": "[저(沒腳)]는 + [수박(有腳)]을 + [먹어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文的名詞後面不需要加字。",
-      "ko_insight": "韓文要在名詞後面貼標籤！看最後一個字底下有沒有「積木腳腳」來決定貼什麼！"
-    }
-  },
-  {
-    "id": "ko_particle_batchim_002",
-    "dimension_label": "助詞：有沒有腳腳？",
-    "chinese": "弟弟喝牛奶。",
-    "ko": {
-      "sentence": "동생은 우유를 마셔요.",
-      "blocks": [
-        {
-          "text": "동생",
-          "role": "主角",
-          "base": "동생"
-        },
-        {
-          "text": "은 ",
-          "role": "助詞",
-          "base": "은",
-          "grammar_note": "有腳腳 (有收音 ㅇ) ➡️ 貼 은"
-        },
-        {
-          "text": "우유",
-          "role": "對象",
-          "base": "우유"
+          "base": "마크",
+          "grammar_note": "Minecraft"
         },
         {
           "text": "를 ",
           "role": "助詞",
           "base": "를",
-          "grammar_note": "沒腳腳 (無收音) ➡️ 貼 를"
+          "grammar_note": "沒腳👟→를"
         },
         {
-          "text": "마셔요.",
+          "text": "해요.",
           "role": "動作",
-          "base": "마시다",
-          "grammar_note": "陰母音 ㅣ ➡️ 穿上 셔요"
+          "base": "하다",
+          "grammar_note": "⭐하다→해요"
         }
       ],
-      "formula": "[동생(有腳)]은 + [우유(沒腳)]를 + [마셔요]"
+      "formula": "[저👟]는 + [마크👟]를 + [해요]"
     },
     "contrast": {
-      "cn_blindspot": "中文的名詞後面不需要加字。",
-      "ko_insight": "韓文要在名詞後面貼標籤！看最後一個字底下有沒有「積木腳腳」來決定貼什麼！"
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
     }
   },
   {
-    "id": "ko_particle_batchim_003",
-    "dimension_label": "助詞：有沒有腳腳？",
-    "chinese": "姊姊看書。",
+    "id": "ko_batchim_002",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "苦力怕爆炸了。",
     "ko": {
-      "sentence": "언니는 책을 읽어요.",
+      "sentence": "크리퍼가 폭발했어요.",
       "blocks": [
         {
-          "text": "언니",
+          "text": "크리퍼",
           "role": "主角",
-          "base": "언니"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 (無收音) ➡️ 貼 는"
-        },
-        {
-          "text": "책",
-          "role": "對象",
-          "base": "책"
-        },
-        {
-          "text": "을 ",
-          "role": "助詞",
-          "base": "을",
-          "grammar_note": "有腳腳 (有收音 ㄱ) ➡️ 貼 을"
-        },
-        {
-          "text": "읽어요.",
-          "role": "動作",
-          "base": "읽다",
-          "grammar_note": "陰母音 ➡️ 穿上 어요"
-        }
-      ],
-      "formula": "[언니(沒腳)]는 + [책(有腳)]을 + [읽어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文的名詞後面不需要加字。",
-      "ko_insight": "韓文要在名詞後面貼標籤！看最後一個字底下有沒有「積木腳腳」來決定貼什麼！"
-    }
-  },
-  {
-    "id": "ko_particle_batchim_004",
-    "dimension_label": "助詞：有沒有腳腳？",
-    "chinese": "老師寫信。",
-    "ko": {
-      "sentence": "선생님은 편지를 써요.",
-      "blocks": [
-        {
-          "text": "선생님",
-          "role": "主角",
-          "base": "선생님"
-        },
-        {
-          "text": "은 ",
-          "role": "助詞",
-          "base": "은",
-          "grammar_note": "有腳腳 (有收音 ㅁ) ➡️ 貼 은"
-        },
-        {
-          "text": "편지",
-          "role": "對象",
-          "base": "편지"
-        },
-        {
-          "text": "를 ",
-          "role": "助詞",
-          "base": "를",
-          "grammar_note": "沒腳腳 (無收音) ➡️ 貼 를"
-        },
-        {
-          "text": "써요.",
-          "role": "動作",
-          "base": "쓰다",
-          "grammar_note": "ㅡ 脫落 ➡️ 써요"
-        }
-      ],
-      "formula": "[선생님(有腳)]은 + [편지(沒腳)]를 + [써요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文的名詞後面不需要加字。",
-      "ko_insight": "韓文要在名詞後面貼標籤！看最後一個字底下有沒有「積木腳腳」來決定貼什麼！"
-    }
-  },
-  {
-    "id": "ko_particle_batchim_005",
-    "dimension_label": "助詞：有沒有腳腳？",
-    "chinese": "貓抓老鼠。",
-    "ko": {
-      "sentence": "고양이가 쥐를 잡아요.",
-      "blocks": [
-        {
-          "text": "고양이",
-          "role": "主角",
-          "base": "고양이"
+          "base": "크리퍼",
+          "grammar_note": "Creeper"
         },
         {
           "text": "가 ",
           "role": "助詞",
           "base": "가",
-          "grammar_note": "沒腳腳 (無收音) ➡️ 貼 가"
+          "grammar_note": "沒腳👟→가"
         },
         {
-          "text": "쥐",
+          "text": "폭발했어요.",
+          "role": "動作",
+          "base": "폭발하다",
+          "grammar_note": "⭐하다→했어요(過去)"
+        }
+      ],
+      "formula": "[크리퍼👟]가 + [폭발했어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_003",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "我挖鑽石。",
+    "ko": {
+      "sentence": "저는 다이아몬드를 캐요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "다이아몬드",
           "role": "對象",
-          "base": "쥐"
+          "base": "다이아몬드",
+          "grammar_note": "鑽石"
         },
         {
           "text": "를 ",
           "role": "助詞",
           "base": "를",
-          "grammar_note": "沒腳腳 (無收音) ➡️ 貼 를"
+          "grammar_note": "沒腳👟→를"
         },
         {
-          "text": "잡아요.",
+          "text": "캐요.",
           "role": "動作",
-          "base": "잡다",
-          "grammar_note": "陽母音 ㅏ ➡️ 穿上 아요"
+          "base": "캐다",
+          "grammar_note": "挖"
         }
       ],
-      "formula": "[고양이(沒腳)]가 + [쥐(沒腳)]를 + [잡아요]"
+      "formula": "[저👟]는 + [다이아몬드👟]를 + [캐요]"
     },
     "contrast": {
-      "cn_blindspot": "中文的名詞後面不需要加字。",
-      "ko_insight": "韓文要在名詞後面貼標籤！看最後一個字底下有沒有「積木腳腳」來決定貼什麼！"
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
     }
   },
   {
-    "id": "ko_verb_yinyang_006",
-    "dimension_label": "動詞：陰陽母音換裝",
-    "chinese": "熊去學校。",
+    "id": "ko_batchim_004",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "朋友蓋房子。",
     "ko": {
-      "sentence": "곰은 학교에 가요.",
+      "sentence": "친구는 집을 지어요.",
       "blocks": [
         {
-          "text": "곰",
+          "text": "친구",
           "role": "主角",
-          "base": "곰"
+          "base": "친구"
         },
         {
-          "text": "은 ",
+          "text": "는 ",
           "role": "助詞",
-          "base": "은",
-          "grammar_note": "有腳腳 (有收音 ㅁ) ➡️ 貼 은"
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "학교",
-          "role": "目標",
-          "base": "학교"
+          "text": "집",
+          "role": "對象",
+          "base": "집"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㅂ→을"
+        },
+        {
+          "text": "지어요.",
+          "role": "動作",
+          "base": "짓다",
+          "grammar_note": "蓋/建造"
+        }
+      ],
+      "formula": "[친구👟]는 + [집🦶]을 + [지어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_005",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "我打殭屍。",
+    "ko": {
+      "sentence": "저는 좀비를 때려요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "좀비",
+          "role": "對象",
+          "base": "좀비",
+          "grammar_note": "殭屍"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "때려요.",
+          "role": "動作",
+          "base": "때리다",
+          "grammar_note": "打"
+        }
+      ],
+      "formula": "[저👟]는 + [좀비👟]를 + [때려요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_006",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "我拼樂高。",
+    "ko": {
+      "sentence": "저는 레고를 만들어요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "레고",
+          "role": "對象",
+          "base": "레고",
+          "grammar_note": "LEGO"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "만들어요.",
+          "role": "動作",
+          "base": "만들다",
+          "grammar_note": "做/拼"
+        }
+      ],
+      "formula": "[저👟]는 + [레고👟]를 + [만들어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_007",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "手機沒電了。",
+    "ko": {
+      "sentence": "핸드폰이 꺼졌어요.",
+      "blocks": [
+        {
+          "text": "핸드폰",
+          "role": "主角",
+          "base": "핸드폰",
+          "grammar_note": "手機"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㄴ→이"
+        },
+        {
+          "text": "꺼졌어요.",
+          "role": "動作",
+          "base": "꺼지다",
+          "grammar_note": "關掉/沒電"
+        }
+      ],
+      "formula": "[핸드폰🦶]이 + [꺼졌어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_008",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "我看YouTube影片。",
+    "ko": {
+      "sentence": "저는 유튜브를 봐요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "유튜브",
+          "role": "對象",
+          "base": "유튜브",
+          "grammar_note": "YouTube"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "봐요.",
+          "role": "動作",
+          "base": "보다",
+          "grammar_note": "☀️陽ㅗ→와요(縮寫봐요)"
+        }
+      ],
+      "formula": "[저👟]는 + [유튜브👟]를 + [봐요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_009",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "密碼忘記了。",
+    "ko": {
+      "sentence": "비밀번호를 잊어버렸어요.",
+      "blocks": [
+        {
+          "text": "비밀번호",
+          "role": "對象",
+          "base": "비밀번호",
+          "grammar_note": "密碼"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "잊어버렸어요.",
+          "role": "動作",
+          "base": "잊어버리다",
+          "grammar_note": "忘記了"
+        }
+      ],
+      "formula": "[비밀번호👟]를 + [잊어버렸어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_010",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "螢幕壞掉了。",
+    "ko": {
+      "sentence": "화면이 고장났어요.",
+      "blocks": [
+        {
+          "text": "화면",
+          "role": "主角",
+          "base": "화면",
+          "grammar_note": "螢幕"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㄴ→이"
+        },
+        {
+          "text": "고장났어요.",
+          "role": "動作",
+          "base": "고장나다",
+          "grammar_note": "壞掉了"
+        }
+      ],
+      "formula": "[화면🦶]이 + [고장났어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_011",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "網路斷線了。",
+    "ko": {
+      "sentence": "인터넷이 끊겼어요.",
+      "blocks": [
+        {
+          "text": "인터넷",
+          "role": "主角",
+          "base": "인터넷",
+          "grammar_note": "網路"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㅅ→이"
+        },
+        {
+          "text": "끊겼어요.",
+          "role": "動作",
+          "base": "끊기다",
+          "grammar_note": "斷線了"
+        }
+      ],
+      "formula": "[인터넷🦶]이 + [끊겼어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_012",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "我贏了！",
+    "ko": {
+      "sentence": "내가 이겼어요!",
+      "blocks": [
+        {
+          "text": "내",
+          "role": "主角",
+          "base": "나",
+          "grammar_note": "我"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "이겼어요!",
+          "role": "動作",
+          "base": "이기다",
+          "grammar_note": "贏了！"
+        }
+      ],
+      "formula": "[내👟]가 + [이겼어요!]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_013",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "遊戲結束。",
+    "ko": {
+      "sentence": "게임이 끝났어요.",
+      "blocks": [
+        {
+          "text": "게임",
+          "role": "主角",
+          "base": "게임",
+          "grammar_note": "遊戲"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㅁ→이"
+        },
+        {
+          "text": "끝났어요.",
+          "role": "動作",
+          "base": "끝나다",
+          "grammar_note": "結束了"
+        }
+      ],
+      "formula": "[게임🦶]이 + [끝났어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_014",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "朋友借我遊戲。",
+    "ko": {
+      "sentence": "친구가 게임을 빌려줬어요.",
+      "blocks": [
+        {
+          "text": "친구",
+          "role": "主角",
+          "base": "친구"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "게임",
+          "role": "對象",
+          "base": "게임"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㅁ→을"
+        },
+        {
+          "text": "빌려줬어요.",
+          "role": "動作",
+          "base": "빌려주다",
+          "grammar_note": "借給了"
+        }
+      ],
+      "formula": "[친구👟]가 + [게임🦶]을 + [빌려줬어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
+    }
+  },
+  {
+    "id": "ko_batchim_015",
+    "dimension_label": "🦶 腳腳大挑戰",
+    "chinese": "玩具掉到地上。",
+    "ko": {
+      "sentence": "장난감이 바닥에 떨어졌어요.",
+      "blocks": [
+        {
+          "text": "장난감",
+          "role": "主角",
+          "base": "장난감",
+          "grammar_note": "玩具"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㅁ→이"
+        },
+        {
+          "text": "바닥",
+          "role": "場景",
+          "base": "바닥",
+          "grammar_note": "地板"
         },
         {
           "text": "에 ",
           "role": "助詞",
           "base": "에",
-          "grammar_note": "表示前往的目的地"
+          "grammar_note": "📍到達的地點"
         },
         {
-          "text": "가요.",
+          "text": "떨어졌어요.",
           "role": "動作",
-          "base": "가다",
-          "grammar_note": "陽母音 ㅏ ☀️ ➡️ 穿上 아요 (縮寫為가요)"
+          "base": "떨어지다",
+          "grammar_note": "掉了"
         }
       ],
-      "formula": "[곰(有腳)]은 + [학교]에 + [가요]"
+      "formula": "[장난감🦶]이 + [바닥]에 + [떨어졌어요]"
     },
     "contrast": {
-      "cn_blindspot": "中文的動詞永遠不會變形。",
-      "ko_insight": "韓文動詞會換衣服！看詞幹最後的母音是明亮的☀️陽母音(ㅏ/ㅗ)還是暗暗的🌙陰母音(其他)，決定穿아요還是어요！"
+      "cn_blindspot": "中文名詞後面不用加字。",
+      "ko_insight": "韓文名詞後面要貼標籤！看最後一個字底下有沒有「腳腳🦶」來決定要貼什麼！"
     }
   },
   {
-    "id": "ko_verb_yinyang_007",
-    "dimension_label": "動詞：陰陽母音換裝",
-    "chinese": "我吃蘋果。",
+    "id": "ko_yinyang_016",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "我肚子餓。",
     "ko": {
-      "sentence": "저는 사과를 먹어요.",
+      "sentence": "저는 배가 고파요.",
       "blocks": [
         {
           "text": "저",
@@ -273,39 +597,123 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "사과",
-          "role": "對象",
-          "base": "사과"
+          "text": "배",
+          "role": "主角",
+          "base": "배",
+          "grammar_note": "肚子"
         },
         {
-          "text": "를 ",
+          "text": "가 ",
           "role": "助詞",
-          "base": "를",
-          "grammar_note": "沒腳腳 ➡️ 貼 를"
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "고파요.",
+          "role": "動作",
+          "base": "고프다",
+          "grammar_note": "☀️陽ㅗ→아요(고프+아→고파)"
+        }
+      ],
+      "formula": "[저]는 + [배]가 + [고파요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_017",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "我吃牛肉麵。",
+    "ko": {
+      "sentence": "저는 우육면을 먹어요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "우육면",
+          "role": "對象",
+          "base": "우육면",
+          "grammar_note": "牛肉麵"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄴ→을"
         },
         {
           "text": "먹어요.",
           "role": "動作",
           "base": "먹다",
-          "grammar_note": "陰母音 ㅓ 🌙 ➡️ 穿上 어요"
+          "grammar_note": "🌙陰ㅓ→어요"
         }
       ],
-      "formula": "[저(沒腳)]는 + [사과(沒腳)]를 + [먹어요]"
+      "formula": "[저]는 + [우육면🦶]을 + [먹어요🌙]"
     },
     "contrast": {
-      "cn_blindspot": "中文的動詞永遠不會變形。",
-      "ko_insight": "韓文動詞會換衣服！看詞幹最後的母音是明亮的☀️陽母音(ㅏ/ㅗ)還是暗暗的🌙陰母音(其他)，決定穿아요還是어요！"
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
     }
   },
   {
-    "id": "ko_verb_yinyang_008",
-    "dimension_label": "動詞：陰陽母音換裝",
-    "chinese": "我來了。",
+    "id": "ko_yinyang_018",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "湯非常燙。",
     "ko": {
-      "sentence": "저는 왔어요.",
+      "sentence": "국이 너무 뜨거워요.",
+      "blocks": [
+        {
+          "text": "국",
+          "role": "主角",
+          "base": "국",
+          "grammar_note": "湯"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㄱ→이"
+        },
+        {
+          "text": "너무 ",
+          "role": "修飾",
+          "base": "너무",
+          "grammar_note": "非常"
+        },
+        {
+          "text": "뜨거워요.",
+          "role": "動作",
+          "base": "뜨겁다",
+          "grammar_note": "🌙陰→워요(ㅂ不規則)"
+        }
+      ],
+      "formula": "[국🦶]이 + 너무 + [뜨거워요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_019",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "我吃水餃。",
+    "ko": {
+      "sentence": "저는 만두를 먹어요.",
       "blocks": [
         {
           "text": "저",
@@ -316,28 +724,78 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "왔어요.",
+          "text": "만두",
+          "role": "對象",
+          "base": "만두",
+          "grammar_note": "水餃"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "먹어요.",
           "role": "動作",
-          "base": "오다",
-          "grammar_note": "陽母音 ㅗ ☀️ ➡️ 와+았=왔어요"
+          "base": "먹다",
+          "grammar_note": "🌙陰ㅓ→어요"
         }
       ],
-      "formula": "[저(沒腳)]는 + [왔어요]"
+      "formula": "[저]는 + [만두👟]를 + [먹어요🌙]"
     },
     "contrast": {
-      "cn_blindspot": "中文的動詞永遠不會變形。",
-      "ko_insight": "韓文動詞會換衣服！看詞幹最後的母音是明亮的☀️陽母音(ㅏ/ㅗ)還是暗暗的🌙陰母音(其他)，決定穿아요還是어요！"
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
     }
   },
   {
-    "id": "ko_verb_yinyang_009",
-    "dimension_label": "動詞：陰陽母音換裝",
-    "chinese": "我坐下。",
+    "id": "ko_yinyang_020",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "水餃超好吃。",
     "ko": {
-      "sentence": "저는 앉아요.",
+      "sentence": "만두가 너무 맛있어요.",
+      "blocks": [
+        {
+          "text": "만두",
+          "role": "主角",
+          "base": "만두"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "너무 ",
+          "role": "修飾",
+          "base": "너무",
+          "grammar_note": "超級"
+        },
+        {
+          "text": "맛있어요.",
+          "role": "動作",
+          "base": "맛있다",
+          "grammar_note": "🌙陰→어요"
+        }
+      ],
+      "formula": "[만두👟]가 + 너무 + [맛있어요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_021",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "我喝珍珠奶茶。",
+    "ko": {
+      "sentence": "저는 버블티를 마셔요.",
       "blocks": [
         {
           "text": "저",
@@ -348,28 +806,130 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "앉아요.",
+          "text": "버블티",
+          "role": "對象",
+          "base": "버블티",
+          "grammar_note": "珍珠奶茶"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "마셔요.",
           "role": "動作",
-          "base": "앉다",
-          "grammar_note": "陽母音 ㅏ ☀️ ➡️ 穿上 아요"
+          "base": "마시다",
+          "grammar_note": "🌙陰ㅣ→셔요"
         }
       ],
-      "formula": "[저(沒腳)]는 + [앉아요]"
+      "formula": "[저]는 + [버블티👟]를 + [마셔요🌙]"
     },
     "contrast": {
-      "cn_blindspot": "中文的動詞永遠不會變形。",
-      "ko_insight": "韓文動詞會換衣服！看詞幹最後的母音是明亮的☀️陽母音(ㅏ/ㅗ)還是暗暗的🌙陰母音(其他)，決定穿아요還是어요！"
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
     }
   },
   {
-    "id": "ko_verb_yinyang_010",
-    "dimension_label": "動詞：陰陽母音換裝",
-    "chinese": "我睡覺。",
+    "id": "ko_yinyang_022",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "媽媽喝咖啡。",
     "ko": {
-      "sentence": "저는 자요.",
+      "sentence": "엄마는 커피를 마셔요.",
+      "blocks": [
+        {
+          "text": "엄마",
+          "role": "主角",
+          "base": "엄마",
+          "grammar_note": "媽媽"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "커피",
+          "role": "對象",
+          "base": "커피",
+          "grammar_note": "咖啡"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "마셔요.",
+          "role": "動作",
+          "base": "마시다",
+          "grammar_note": "🌙陰ㅣ→셔요"
+        }
+      ],
+      "formula": "[엄마👟]는 + [커피👟]를 + [마셔요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_023",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "麵包很香。",
+    "ko": {
+      "sentence": "빵이 좋은 냄새가 나요.",
+      "blocks": [
+        {
+          "text": "빵",
+          "role": "主角",
+          "base": "빵",
+          "grammar_note": "麵包"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㅇ→이"
+        },
+        {
+          "text": "좋은 냄새",
+          "role": "修飾",
+          "base": "좋은 냄새",
+          "grammar_note": "好聞的味道"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "나요.",
+          "role": "動作",
+          "base": "나다",
+          "grammar_note": "☀️陽ㅏ→아요(나+아→나요)"
+        }
+      ],
+      "formula": "[빵🦶]이 + [좋은 냄새]가 + [나요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_024",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "我拿筷子。",
+    "ko": {
+      "sentence": "저는 젓가락을 잡아요.",
       "blocks": [
         {
           "text": "저",
@@ -380,68 +940,318 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "자요.",
+          "text": "젓가락",
+          "role": "對象",
+          "base": "젓가락",
+          "grammar_note": "筷子"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄱ→을"
+        },
+        {
+          "text": "잡아요.",
           "role": "動作",
-          "base": "자다",
-          "grammar_note": "陽母音 ㅏ ☀️ ➡️ 穿上 아요 (縮寫자요)"
+          "base": "잡다",
+          "grammar_note": "☀️陽ㅏ→아요"
         }
       ],
-      "formula": "[저(沒腳)]는 + [자요]"
+      "formula": "[저]는 + [젓가락🦶]을 + [잡아요☀️]"
     },
     "contrast": {
-      "cn_blindspot": "中文的動詞永遠不會變形。",
-      "ko_insight": "韓文動詞會換衣服！看詞幹最後的母音是明亮的☀️陽母音(ㅏ/ㅗ)還是暗暗的🌙陰母音(其他)，決定穿아요還是어요！"
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
     }
   },
   {
-    "id": "ko_verb_hada_011",
-    "dimension_label": "動詞：最強魔法 하다",
-    "chinese": "兔子在房間讀書。",
+    "id": "ko_yinyang_025",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "湯太鹹了。",
     "ko": {
-      "sentence": "토끼는 방에서 공부해요.",
+      "sentence": "국이 너무 짜요.",
       "blocks": [
         {
-          "text": "토끼",
+          "text": "국",
           "role": "主角",
-          "base": "토끼"
+          "base": "국",
+          "grammar_note": "湯"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㄱ→이"
+        },
+        {
+          "text": "너무 ",
+          "role": "修飾",
+          "base": "너무",
+          "grammar_note": "太"
+        },
+        {
+          "text": "짜요.",
+          "role": "動作",
+          "base": "짜다",
+          "grammar_note": "☀️陽ㅏ→아요(짜+아→짜요)"
+        }
+      ],
+      "formula": "[국🦶]이 + 너무 + [짜요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_026",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "我喝水。",
+    "ko": {
+      "sentence": "저는 물을 마셔요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
         },
         {
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "방",
+          "text": "물",
+          "role": "對象",
+          "base": "물",
+          "grammar_note": "水"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄹ→을"
+        },
+        {
+          "text": "마셔요.",
+          "role": "動作",
+          "base": "마시다",
+          "grammar_note": "🌙陰→셔요"
+        }
+      ],
+      "formula": "[저]는 + [물🦶]을 + [마셔요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_027",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "弟弟吃布丁。",
+    "ko": {
+      "sentence": "동생은 푸딩을 먹어요.",
+      "blocks": [
+        {
+          "text": "동생",
+          "role": "主角",
+          "base": "동생",
+          "grammar_note": "弟弟"
+        },
+        {
+          "text": "은 ",
+          "role": "助詞",
+          "base": "은",
+          "grammar_note": "有腳🦶ㅇ→은"
+        },
+        {
+          "text": "푸딩",
+          "role": "對象",
+          "base": "푸딩",
+          "grammar_note": "布丁"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㅇ→을"
+        },
+        {
+          "text": "먹어요.",
+          "role": "動作",
+          "base": "먹다",
+          "grammar_note": "🌙陰ㅓ→어요"
+        }
+      ],
+      "formula": "[동생🦶]은 + [푸딩🦶]을 + [먹어요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_028",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "我吃飽了。",
+    "ko": {
+      "sentence": "저는 배불러요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "배불러요.",
+          "role": "動作",
+          "base": "배부르다",
+          "grammar_note": "🌙陰→러요(르不規則)"
+        }
+      ],
+      "formula": "[저]는 + [배불러요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_yinyang_029",
+    "dimension_label": "☀️🌙 陰陽母音換裝",
+    "chinese": "冰箱有蛋糕。",
+    "ko": {
+      "sentence": "냉장고에 케이크가 있어요.",
+      "blocks": [
+        {
+          "text": "냉장고",
           "role": "場景",
-          "base": "방"
+          "base": "냉장고",
+          "grammar_note": "冰箱"
         },
         {
-          "text": "에서 ",
+          "text": "에 ",
           "role": "助詞",
-          "base": "에서",
-          "grammar_note": "在某個地方做動作"
+          "base": "에",
+          "grammar_note": "📍靜態位置"
+        },
+        {
+          "text": "케이크",
+          "role": "主角",
+          "base": "케이크",
+          "grammar_note": "蛋糕"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "있어요.",
+          "role": "動作",
+          "base": "있다",
+          "grammar_note": "🌙陰→어요"
+        }
+      ],
+      "formula": "[냉장고]에 + [케이크👟]가 + [있어요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的動詞永遠不變形。",
+      "ko_insight": "韓文動詞要看最後母音換衣服！☀️陽(ㅏ/ㅗ)→아요，🌙陰(其他)→어요，⭐하다→해요"
+    }
+  },
+  {
+    "id": "ko_hada_030",
+    "dimension_label": "⭐ 하다 魔法動詞",
+    "chinese": "我打電動。",
+    "ko": {
+      "sentence": "저는 게임을 해요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "게임",
+          "role": "對象",
+          "base": "게임",
+          "grammar_note": "電動"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㅁ→을"
+        },
+        {
+          "text": "해요.",
+          "role": "動作",
+          "base": "하다",
+          "grammar_note": "⭐魔法→해요"
+        }
+      ],
+      "formula": "[저]는 + [게임🦶]을 + [해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文直接說動作就好。",
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
+    }
+  },
+  {
+    "id": "ko_hada_031",
+    "dimension_label": "⭐ 하다 魔法動詞",
+    "chinese": "我讀書。",
+    "ko": {
+      "sentence": "저는 공부해요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
         },
         {
           "text": "공부해요.",
           "role": "動作",
           "base": "공부하다",
-          "grammar_note": "魔法詞 하다 ➡️ 直接變身 해요"
+          "grammar_note": "⭐공부+하다→해요"
         }
       ],
-      "formula": "[토끼(沒腳)]는 + [방]에서 + [공부해요]"
+      "formula": "[저]는 + [공부해요⭐]"
     },
     "contrast": {
       "cn_blindspot": "中文直接說動作就好。",
-      "ko_insight": "看到「하다(做)」結尾的動作，不用管陰陽母音，直接念魔法咒語變成「해요」就對了！"
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
     }
   },
   {
-    "id": "ko_verb_hada_012",
-    "dimension_label": "動詞：最強魔法 하다",
+    "id": "ko_hada_032",
+    "dimension_label": "⭐ 하다 魔法動詞",
     "chinese": "我運動。",
     "ko": {
       "sentence": "저는 운동해요.",
@@ -455,244 +1265,474 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
           "text": "운동해요.",
           "role": "動作",
           "base": "운동하다",
-          "grammar_note": "魔法詞 하다 ➡️ 直接變身 해요"
+          "grammar_note": "⭐운동+하다→해요"
         }
       ],
-      "formula": "[저(沒腳)]는 + [운동해요]"
+      "formula": "[저]는 + [운동해요⭐]"
     },
     "contrast": {
       "cn_blindspot": "中文直接說動作就好。",
-      "ko_insight": "看到「하다(做)」結尾的動作，不用管陰陽母音，直接念魔法咒語變成「해요」就對了！"
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
     }
   },
   {
-    "id": "ko_verb_hada_013",
-    "dimension_label": "動詞：最強魔法 하다",
-    "chinese": "妹妹打電話。",
+    "id": "ko_hada_033",
+    "dimension_label": "⭐ 하다 魔法動詞",
+    "chinese": "今天有數學課。",
     "ko": {
-      "sentence": "여동생은 전화해요.",
+      "sentence": "오늘은 수학 수업이 있어요.",
       "blocks": [
         {
-          "text": "여동생",
-          "role": "主角",
-          "base": "여동생"
+          "text": "오늘",
+          "role": "時間",
+          "base": "오늘",
+          "grammar_note": "今天"
         },
         {
           "text": "은 ",
           "role": "助詞",
           "base": "은",
-          "grammar_note": "有腳腳 (有收音 ㅇ) ➡️ 貼 은"
+          "grammar_note": "有腳🦶ㄹ→은"
         },
         {
-          "text": "전화해요.",
-          "role": "動作",
-          "base": "전화하다",
-          "grammar_note": "魔法詞 하다 ➡️ 直接變身 해요"
-        }
-      ],
-      "formula": "[여동생(有腳)]은 + [전화해요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文直接說動作就好。",
-      "ko_insight": "看到「하다(做)」結尾的動作，不用管陰陽母音，直接念魔法咒語變成「해요」就對了！"
-    }
-  },
-  {
-    "id": "ko_verb_hada_014",
-    "dimension_label": "動詞：最強魔法 하다",
-    "chinese": "我喜歡韓國。",
-    "ko": {
-      "sentence": "저는 한국을 좋아해요.",
-      "blocks": [
-        {
-          "text": "저",
+          "text": "수학 수업",
           "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "한국",
-          "role": "對象",
-          "base": "한국"
-        },
-        {
-          "text": "을 ",
-          "role": "助詞",
-          "base": "을",
-          "grammar_note": "有腳腳 (有收音 ㄱ) ➡️ 貼 을"
-        },
-        {
-          "text": "좋아해요.",
-          "role": "動作",
-          "base": "좋아하다",
-          "grammar_note": "魔法詞 하다 ➡️ 直接變身 해요"
-        }
-      ],
-      "formula": "[저(沒腳)]는 + [한국(有腳)]을 + [좋아해요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文直接說動作就好。",
-      "ko_insight": "看到「하다(做)」結尾的動作，不用管陰陽母音，直接念魔法咒語變成「해요」就對了！"
-    }
-  },
-  {
-    "id": "ko_location_015",
-    "dimension_label": "場所：在哪裡做事？",
-    "chinese": "我在家。",
-    "ko": {
-      "sentence": "저는 집에 있어요.",
-      "blocks": [
-        {
-          "text": "저",
-          "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "집",
-          "role": "場景",
-          "base": "집"
-        },
-        {
-          "text": "에 ",
-          "role": "助詞",
-          "base": "에",
-          "grammar_note": "📍 靜態存在的位置"
-        },
-        {
-          "text": "있어요.",
-          "role": "動作",
-          "base": "있다",
-          "grammar_note": "有/在"
-        }
-      ],
-      "formula": "[저]는 + [집]에(靜態📍) + [있어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文用「在」一個字搞定，不分動靜。",
-      "ko_insight": "에＝靜靜地存在的位置（GPS 定位📍），에서＝在那裡做動作的舞台🎬！"
-    }
-  },
-  {
-    "id": "ko_location_016",
-    "dimension_label": "場所：在哪裡做事？",
-    "chinese": "我在圖書館讀書。",
-    "ko": {
-      "sentence": "저는 도서관에서 책을 읽어요.",
-      "blocks": [
-        {
-          "text": "저",
-          "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "도서관",
-          "role": "場景",
-          "base": "도서관"
-        },
-        {
-          "text": "에서 ",
-          "role": "助詞",
-          "base": "에서",
-          "grammar_note": "🎬 做動作的舞台"
-        },
-        {
-          "text": "책",
-          "role": "對象",
-          "base": "책"
-        },
-        {
-          "text": "을 ",
-          "role": "助詞",
-          "base": "을",
-          "grammar_note": "有腳腳 ➡️ 貼 을"
-        },
-        {
-          "text": "읽어요.",
-          "role": "動作",
-          "base": "읽다",
-          "grammar_note": "讀"
-        }
-      ],
-      "formula": "[저]는 + [도서관]에서(動態🎬) + [책]을 + [읽어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文用「在」一個字搞定，不分動靜。",
-      "ko_insight": "에＝靜靜地存在的位置（GPS 定位📍），에서＝在那裡做動作的舞台🎬！"
-    }
-  },
-  {
-    "id": "ko_location_017",
-    "dimension_label": "場所：在哪裡做事？",
-    "chinese": "書在桌上。",
-    "ko": {
-      "sentence": "책이 책상 위에 있어요.",
-      "blocks": [
-        {
-          "text": "책",
-          "role": "主角",
-          "base": "책"
+          "base": "수학 수업",
+          "grammar_note": "數學課"
         },
         {
           "text": "이 ",
           "role": "助詞",
           "base": "이",
-          "grammar_note": "有腳腳 (有收音 ㄱ) ➡️ 貼 이"
-        },
-        {
-          "text": "책상 위",
-          "role": "場景",
-          "base": "책상 위"
-        },
-        {
-          "text": "에 ",
-          "role": "助詞",
-          "base": "에",
-          "grammar_note": "📍 靜態存在的位置"
+          "grammar_note": "有腳🦶ㅂ→이"
         },
         {
           "text": "있어요.",
           "role": "動作",
           "base": "있다",
-          "grammar_note": "有/在"
+          "grammar_note": "有"
         }
       ],
-      "formula": "[책(有腳)]이 + [책상 위]에(靜態📍) + [있어요]"
+      "formula": "[오늘🦶]은 + [수학 수업🦶]이 + [있어요]"
     },
     "contrast": {
-      "cn_blindspot": "中文用「在」一個字搞定，不分動靜。",
-      "ko_insight": "에＝靜靜地存在的位置（GPS 定位📍），에서＝在那裡做動作的舞台🎬！"
+      "cn_blindspot": "中文直接說動作就好。",
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
     }
   },
   {
-    "id": "ko_location_018",
-    "dimension_label": "場所：在哪裡做事？",
-    "chinese": "在公園玩。",
+    "id": "ko_hada_034",
+    "dimension_label": "⭐ 하다 魔法動詞",
+    "chinese": "我準備考試。",
     "ko": {
-      "sentence": "공원에서 놀아요.",
+      "sentence": "저는 시험 준비해요.",
       "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "시험 ",
+          "role": "對象",
+          "base": "시험",
+          "grammar_note": "考試"
+        },
+        {
+          "text": "준비해요.",
+          "role": "動作",
+          "base": "준비하다",
+          "grammar_note": "⭐준비+하다→해요"
+        }
+      ],
+      "formula": "[저]는 + [시험] + [준비해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文直接說動作就好。",
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
+    }
+  },
+  {
+    "id": "ko_hada_035",
+    "dimension_label": "⭐ 하다 魔法動詞",
+    "chinese": "我打躲避球。",
+    "ko": {
+      "sentence": "저는 피구를 해요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "피구",
+          "role": "對象",
+          "base": "피구",
+          "grammar_note": "躲避球"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "해요.",
+          "role": "動作",
+          "base": "하다",
+          "grammar_note": "⭐魔法→해요"
+        }
+      ],
+      "formula": "[저]는 + [피구👟]를 + [해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文直接說動作就好。",
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
+    }
+  },
+  {
+    "id": "ko_hada_036",
+    "dimension_label": "⭐ 하다 魔法動詞",
+    "chinese": "值日生擦黑板。",
+    "ko": {
+      "sentence": "당번이 칠판을 청소해요.",
+      "blocks": [
+        {
+          "text": "당번",
+          "role": "主角",
+          "base": "당번",
+          "grammar_note": "值日生"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㄴ→이"
+        },
+        {
+          "text": "칠판",
+          "role": "對象",
+          "base": "칠판",
+          "grammar_note": "黑板"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄴ→을"
+        },
+        {
+          "text": "청소해요.",
+          "role": "動作",
+          "base": "청소하다",
+          "grammar_note": "⭐청소+하다→해요"
+        }
+      ],
+      "formula": "[당번🦶]이 + [칠판🦶]을 + [청소해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文直接說動作就好。",
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
+    }
+  },
+  {
+    "id": "ko_hada_037",
+    "dimension_label": "⭐ 하다 魔法動詞",
+    "chinese": "我寫程式。",
+    "ko": {
+      "sentence": "저는 코딩을 해요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "코딩",
+          "role": "對象",
+          "base": "코딩",
+          "grammar_note": "寫程式"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㅇ→을"
+        },
+        {
+          "text": "해요.",
+          "role": "動作",
+          "base": "하다",
+          "grammar_note": "⭐魔法→해요"
+        }
+      ],
+      "formula": "[저]는 + [코딩🦶]을 + [해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文直接說動作就好。",
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
+    }
+  },
+  {
+    "id": "ko_hada_038",
+    "dimension_label": "⭐ 하다 魔法動詞",
+    "chinese": "我訂閱頻道。",
+    "ko": {
+      "sentence": "저는 채널을 구독해요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "채널",
+          "role": "對象",
+          "base": "채널",
+          "grammar_note": "頻道"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄹ→을"
+        },
+        {
+          "text": "구독해요.",
+          "role": "動作",
+          "base": "구독하다",
+          "grammar_note": "⭐구독+하다→해요"
+        }
+      ],
+      "formula": "[저]는 + [채널🦶]을 + [구독해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文直接說動作就好。",
+      "ko_insight": "看到 ○○하다 結尾的動詞，不用管陰陽，直接念魔法咒語變成「해요」就對了！"
+    }
+  },
+  {
+    "id": "ko_location_039",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "暑假去日本。",
+    "ko": {
+      "sentence": "여름방학에 일본에 가요.",
+      "blocks": [
+        {
+          "text": "여름방학",
+          "role": "時間",
+          "base": "여름방학",
+          "grammar_note": "暑假"
+        },
+        {
+          "text": "에 ",
+          "role": "助詞",
+          "base": "에",
+          "grammar_note": "📍什麼時候"
+        },
+        {
+          "text": "일본",
+          "role": "目標",
+          "base": "일본",
+          "grammar_note": "日本"
+        },
+        {
+          "text": "에 ",
+          "role": "助詞",
+          "base": "에",
+          "grammar_note": "📍前往的目的地"
+        },
+        {
+          "text": "가요.",
+          "role": "動作",
+          "base": "가다",
+          "grammar_note": "☀️陽ㅏ→가요"
+        }
+      ],
+      "formula": "[여름방학]에(⏰) + [일본]에(📍) + [가요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
+    }
+  },
+  {
+    "id": "ko_location_040",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "我們去大阪。",
+    "ko": {
+      "sentence": "우리는 오사카에 가요.",
+      "blocks": [
+        {
+          "text": "우리",
+          "role": "主角",
+          "base": "우리",
+          "grammar_note": "我們"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "오사카",
+          "role": "目標",
+          "base": "오사카",
+          "grammar_note": "大阪"
+        },
+        {
+          "text": "에 ",
+          "role": "助詞",
+          "base": "에",
+          "grammar_note": "📍前往的目的地"
+        },
+        {
+          "text": "가요.",
+          "role": "動作",
+          "base": "가다",
+          "grammar_note": "☀️陽→가요"
+        }
+      ],
+      "formula": "[우리]는 + [오사카]에(📍) + [가요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
+    }
+  },
+  {
+    "id": "ko_location_041",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "飯店超級大。",
+    "ko": {
+      "sentence": "호텔이 엄청 커요.",
+      "blocks": [
+        {
+          "text": "호텔",
+          "role": "主角",
+          "base": "호텔",
+          "grammar_note": "飯店"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㄹ→이"
+        },
+        {
+          "text": "엄청 ",
+          "role": "修飾",
+          "base": "엄청",
+          "grammar_note": "超級"
+        },
+        {
+          "text": "커요.",
+          "role": "動作",
+          "base": "크다",
+          "grammar_note": "🌙陰→커요(ㅡ脫落)"
+        }
+      ],
+      "formula": "[호텔🦶]이 + 엄청 + [커요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
+    }
+  },
+  {
+    "id": "ko_location_042",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "我在公園散步。",
+    "ko": {
+      "sentence": "저는 공원에서 산책해요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "공원",
+          "role": "場景",
+          "base": "공원",
+          "grammar_note": "公園"
+        },
+        {
+          "text": "에서 ",
+          "role": "助詞",
+          "base": "에서",
+          "grammar_note": "🎬做動作的舞台"
+        },
+        {
+          "text": "산책해요.",
+          "role": "動作",
+          "base": "산책하다",
+          "grammar_note": "⭐산책+하다→해요"
+        }
+      ],
+      "formula": "[저]는 + [공원]에서(🎬) + [산책해요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
+    }
+  },
+  {
+    "id": "ko_location_043",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "狗在公園跑。",
+    "ko": {
+      "sentence": "강아지가 공원에서 뛰어요.",
+      "blocks": [
+        {
+          "text": "강아지",
+          "role": "主角",
+          "base": "강아지",
+          "grammar_note": "狗"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
         {
           "text": "공원",
           "role": "場景",
@@ -702,78 +1742,106 @@
           "text": "에서 ",
           "role": "助詞",
           "base": "에서",
-          "grammar_note": "🎬 做動作的舞台"
+          "grammar_note": "🎬做動作的舞台"
         },
         {
-          "text": "놀아요.",
+          "text": "뛰어요.",
           "role": "動作",
-          "base": "놀다",
-          "grammar_note": "陽母音 ㅗ ☀️ ➡️ 穿上 아요"
+          "base": "뛰다",
+          "grammar_note": "🌙陰→어요"
         }
       ],
-      "formula": "[공원]에서(動態🎬) + [놀아요]"
+      "formula": "[강아지👟]가 + [공원]에서(🎬) + [뛰어요]"
     },
     "contrast": {
-      "cn_blindspot": "中文用「在」一個字搞定，不分動靜。",
-      "ko_insight": "에＝靜靜地存在的位置（GPS 定位📍），에서＝在那裡做動作的舞台🎬！"
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
     }
   },
   {
-    "id": "ko_demonstrative_019",
-    "dimension_label": "指示詞：三兄弟 이/그/저",
-    "chinese": "這是什麼？",
+    "id": "ko_location_044",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "去鐵道博物館。",
     "ko": {
-      "sentence": "이것은 뭐예요?",
+      "sentence": "철도 박물관에 가요.",
       "blocks": [
         {
-          "text": "이것",
-          "role": "主角",
-          "base": "이것",
-          "grammar_note": "🖐️ 我手邊的東西"
+          "text": "철도 박물관",
+          "role": "目標",
+          "base": "철도 박물관",
+          "grammar_note": "鐵道博物館"
         },
         {
-          "text": "은 ",
+          "text": "에 ",
           "role": "助詞",
-          "base": "은",
-          "grammar_note": "有腳腳 (有收音 ㅅ) ➡️ 貼 은"
+          "base": "에",
+          "grammar_note": "📍前往的目的地"
         },
         {
-          "text": "뭐예요?",
+          "text": "가요.",
           "role": "動作",
-          "base": "뭐",
-          "grammar_note": "是什麼？"
+          "base": "가다",
+          "grammar_note": "☀️陽→가요"
         }
       ],
-      "formula": "[이것(我手邊🖐️)]은 + [뭐예요?]"
+      "formula": "[철도 박물관]에(📍) + [가요]"
     },
     "contrast": {
-      "cn_blindspot": "中文只分「這」「那」兩種。",
-      "ko_insight": "韓文有三兄弟！이＝我手邊🖐️、그＝你旁邊/剛提過👉、저＝離我們都遠🔭"
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
     }
   },
   {
-    "id": "ko_demonstrative_020",
-    "dimension_label": "指示詞：三兄弟 이/그/저",
-    "chinese": "那本書很好看。",
+    "id": "ko_location_045",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "去士林科教館。",
     "ko": {
-      "sentence": "그 책은 재미있어요.",
+      "sentence": "과학관에 가요.",
       "blocks": [
         {
-          "text": "그 ",
-          "role": "修飾",
-          "base": "그",
-          "grammar_note": "👉 你旁邊/剛提過的"
+          "text": "과학관",
+          "role": "目標",
+          "base": "과학관",
+          "grammar_note": "科教館"
         },
         {
-          "text": "책",
-          "role": "主角",
-          "base": "책"
-        },
-        {
-          "text": "은 ",
+          "text": "에 ",
           "role": "助詞",
-          "base": "은",
-          "grammar_note": "有腳腳 ➡️ 貼 은"
+          "base": "에",
+          "grammar_note": "📍前往的目的地"
+        },
+        {
+          "text": "가요.",
+          "role": "動作",
+          "base": "가다",
+          "grammar_note": "☀️陽→가요"
+        }
+      ],
+      "formula": "[과학관]에(📍) + [가요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
+    }
+  },
+  {
+    "id": "ko_location_046",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "展覽很有趣。",
+    "ko": {
+      "sentence": "전시가 재미있어요.",
+      "blocks": [
+        {
+          "text": "전시",
+          "role": "主角",
+          "base": "전시",
+          "grammar_note": "展覽"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
         },
         {
           "text": "재미있어요.",
@@ -782,57 +1850,19 @@
           "grammar_note": "有趣"
         }
       ],
-      "formula": "[그(你旁邊👉)] 책은 + [재미있어요]"
+      "formula": "[전시👟]가 + [재미있어요]"
     },
     "contrast": {
-      "cn_blindspot": "中文只分「這」「那」兩種。",
-      "ko_insight": "韓文有三兄弟！이＝我手邊🖐️、그＝你旁邊/剛提過👉、저＝離我們都遠🔭"
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
     }
   },
   {
-    "id": "ko_demonstrative_021",
-    "dimension_label": "指示詞：三兄弟 이/그/저",
-    "chinese": "那邊的山很高。",
+    "id": "ko_location_047",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "我去超商。",
     "ko": {
-      "sentence": "저 산은 높아요.",
-      "blocks": [
-        {
-          "text": "저 ",
-          "role": "修飾",
-          "base": "저",
-          "grammar_note": "🔭 離我們都遠的"
-        },
-        {
-          "text": "산",
-          "role": "主角",
-          "base": "산"
-        },
-        {
-          "text": "은 ",
-          "role": "助詞",
-          "base": "은",
-          "grammar_note": "有腳腳 (有收音 ㄴ) ➡️ 貼 은"
-        },
-        {
-          "text": "높아요.",
-          "role": "動作",
-          "base": "높다",
-          "grammar_note": "陽母音 ㅗ ☀️ ➡️ 穿上 아요"
-        }
-      ],
-      "formula": "[저(遠🔭)] 산은 + [높아요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文只分「這」「那」兩種。",
-      "ko_insight": "韓文有三兄弟！이＝我手邊🖐️、그＝你旁邊/剛提過👉、저＝離我們都遠🔭"
-    }
-  },
-  {
-    "id": "ko_negation_022",
-    "dimension_label": "否定：兩種說「不」",
-    "chinese": "我不吃。",
-    "ko": {
-      "sentence": "저는 안 먹어요.",
+      "sentence": "저는 편의점에 가요.",
       "blocks": [
         {
           "text": "저",
@@ -843,84 +1873,209 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "편의점",
+          "role": "目標",
+          "base": "편의점",
+          "grammar_note": "超商"
+        },
+        {
+          "text": "에 ",
+          "role": "助詞",
+          "base": "에",
+          "grammar_note": "📍前往的目的地"
+        },
+        {
+          "text": "가요.",
+          "role": "動作",
+          "base": "가다",
+          "grammar_note": "☀️陽→가요"
+        }
+      ],
+      "formula": "[저]는 + [편의점]에(📍) + [가요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
+    }
+  },
+  {
+    "id": "ko_location_048",
+    "dimension_label": "📍🎬 去哪裡做什麼",
+    "chinese": "全家看電影。",
+    "ko": {
+      "sentence": "온 가족이 영화를 봐요.",
+      "blocks": [
+        {
+          "text": "온 가족",
+          "role": "主角",
+          "base": "온 가족",
+          "grammar_note": "全家"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㄱ→이"
+        },
+        {
+          "text": "영화",
+          "role": "對象",
+          "base": "영화",
+          "grammar_note": "電影"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "봐요.",
+          "role": "動作",
+          "base": "보다",
+          "grammar_note": "☀️陽ㅗ→봐요"
+        }
+      ],
+      "formula": "[온 가족🦶]이 + [영화👟]를 + [봐요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文用「在」一個字搞定。",
+      "ko_insight": "에＝📍GPS定位（靜態/目的地），에서＝🎬做動作的舞台！"
+    }
+  },
+  {
+    "id": "ko_combo_049",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
+    "chinese": "找不到積木零件。",
+    "ko": {
+      "sentence": "레고 부품을 못 찾아요.",
+      "blocks": [
+        {
+          "text": "레고 부품",
+          "role": "對象",
+          "base": "레고 부품",
+          "grammar_note": "積木零件"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㅁ→을"
+        },
+        {
+          "text": "못 ",
+          "role": "修飾",
+          "base": "못",
+          "grammar_note": "✋ 不能/找不到"
+        },
+        {
+          "text": "찾아요.",
+          "role": "動作",
+          "base": "찾다",
+          "grammar_note": "☀️陽ㅏ→아요"
+        }
+      ],
+      "formula": "[레고 부품]을 + 못(✋) + [찾아요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
+    }
+  },
+  {
+    "id": "ko_combo_050",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
+    "chinese": "我不去學校。",
+    "ko": {
+      "sentence": "저는 학교에 안 가요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "학교",
+          "role": "目標",
+          "base": "학교"
+        },
+        {
+          "text": "에 ",
+          "role": "助詞",
+          "base": "에",
+          "grammar_note": "📍目的地"
         },
         {
           "text": "안 ",
           "role": "修飾",
           "base": "안",
-          "grammar_note": "✋ 簡單否定，放動詞前面"
+          "grammar_note": "✋不"
         },
         {
-          "text": "먹어요.",
-          "role": "動作",
-          "base": "먹다",
-          "grammar_note": "陰母音 🌙 ➡️ 穿上 어요"
-        }
-      ],
-      "formula": "[저]는 + 안(✋不) + [먹어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文在動詞前面加「不」就好。",
-      "ko_insight": "韓文有兩種否定！① 簡單版：안放前面 ② 正式版：動詞+지 않아요"
-    }
-  },
-  {
-    "id": "ko_negation_023",
-    "dimension_label": "否定：兩種說「不」",
-    "chinese": "我不去。（正式）",
-    "ko": {
-      "sentence": "저는 가지 않아요.",
-      "blocks": [
-        {
-          "text": "저",
-          "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "가지 않아요.",
+          "text": "가요.",
           "role": "動作",
           "base": "가다",
-          "grammar_note": "🎩 正式否定：詞幹+지 않아요"
+          "grammar_note": "☀️陽→가요"
         }
       ],
-      "formula": "[저]는 + [가지 않아요](🎩正式否定)"
+      "formula": "[저]는 + [학교]에 + 안(✋) + [가요]"
     },
     "contrast": {
-      "cn_blindspot": "中文在動詞前面加「不」就好。",
-      "ko_insight": "韓文有兩種否定！① 簡單版：안放前面 ② 正式版：動詞+지 않아요"
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
     }
   },
   {
-    "id": "ko_negation_024",
-    "dimension_label": "否定：兩種說「不」",
-    "chinese": "不好吃。",
+    "id": "ko_combo_051",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
+    "chinese": "影片超好笑。",
     "ko": {
-      "sentence": "맛없어요.",
+      "sentence": "영상이 너무 웃겨요.",
       "blocks": [
         {
-          "text": "맛없어요.",
+          "text": "영상",
+          "role": "主角",
+          "base": "영상",
+          "grammar_note": "影片"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㅇ→이"
+        },
+        {
+          "text": "너무 ",
+          "role": "修飾",
+          "base": "너무",
+          "grammar_note": "超級"
+        },
+        {
+          "text": "웃겨요.",
           "role": "動作",
-          "base": "맛없다",
-          "grammar_note": "맛(味道)+없다(沒有)＝不好吃"
+          "base": "웃기다",
+          "grammar_note": "🌙陰→겨요(好笑)"
         }
       ],
-      "formula": "[맛없어요](味道+沒有＝不好吃)"
+      "formula": "[영상🦶]이 + 너무 + [웃겨요]"
     },
     "contrast": {
-      "cn_blindspot": "中文在動詞前面加「不」就好。",
-      "ko_insight": "韓文有兩種否定！① 簡單版：안放前面 ② 正式版：動詞+지 않아요"
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
     }
   },
   {
-    "id": "ko_want_025",
-    "dimension_label": "想要：고 싶어요",
+    "id": "ko_combo_052",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
     "chinese": "我想吃炸雞。",
     "ko": {
       "sentence": "저는 치킨을 먹고 싶어요.",
@@ -934,36 +2089,37 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
           "text": "치킨",
           "role": "對象",
-          "base": "치킨"
+          "base": "치킨",
+          "grammar_note": "炸雞"
         },
         {
           "text": "을 ",
           "role": "助詞",
           "base": "을",
-          "grammar_note": "有腳腳 (有收音 ㄴ) ➡️ 貼 을"
+          "grammar_note": "有腳🦶ㄴ→을"
         },
         {
           "text": "먹고 싶어요.",
           "role": "動作",
           "base": "먹다",
-          "grammar_note": "詞幹+고 싶어요＝想做"
+          "grammar_note": "🌟詞幹+고 싶어요＝想吃"
         }
       ],
-      "formula": "[저]는 + [치킨(有腳)]을 + [먹고 싶어요]"
+      "formula": "[저]는 + [치킨🦶]을 + [먹고 싶어요🌟]"
     },
     "contrast": {
-      "cn_blindspot": "中文加「想」就好。",
-      "ko_insight": "韓文在動詞詞幹後面直接加 고 싶어요，不用管陰陽，超簡單的魔法接頭！"
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
     }
   },
   {
-    "id": "ko_want_026",
-    "dimension_label": "想要：고 싶어요",
+    "id": "ko_combo_053",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
     "chinese": "我想去韓國。",
     "ko": {
       "sentence": "저는 한국에 가고 싶어요.",
@@ -977,7 +2133,7 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
           "text": "한국",
@@ -988,569 +2144,320 @@
           "text": "에 ",
           "role": "助詞",
           "base": "에",
-          "grammar_note": "前往的目的地"
+          "grammar_note": "📍目的地"
         },
         {
           "text": "가고 싶어요.",
           "role": "動作",
           "base": "가다",
-          "grammar_note": "詞幹+고 싶어요＝想去"
+          "grammar_note": "🌟詞幹+고 싶어요＝想去"
         }
       ],
-      "formula": "[저]는 + [한국]에 + [가고 싶어요]"
+      "formula": "[저]는 + [한국]에 + [가고 싶어요🌟]"
     },
     "contrast": {
-      "cn_blindspot": "中文加「想」就好。",
-      "ko_insight": "韓文在動詞詞幹後面直接加 고 싶어요，不用管陰陽，超簡單的魔法接頭！"
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
     }
   },
   {
-    "id": "ko_want_027",
-    "dimension_label": "想要：고 싶어요",
-    "chinese": "我想睡覺。",
+    "id": "ko_combo_054",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
+    "chinese": "我的狗在睡覺。",
     "ko": {
-      "sentence": "저는 자고 싶어요.",
+      "sentence": "우리 강아지가 자고 있어요.",
       "blocks": [
         {
-          "text": "저",
+          "text": "우리 강아지",
           "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "자고 싶어요.",
-          "role": "動作",
-          "base": "자다",
-          "grammar_note": "詞幹+고 싶어요＝想睡"
-        }
-      ],
-      "formula": "[저]는 + [자고 싶어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「想」就好。",
-      "ko_insight": "韓文在動詞詞幹後面直接加 고 싶어요，不用管陰陽，超簡單的魔法接頭！"
-    }
-  },
-  {
-    "id": "ko_progressive_028",
-    "dimension_label": "正在：고 있어요",
-    "chinese": "我正在吃飯。",
-    "ko": {
-      "sentence": "저는 밥을 먹고 있어요.",
-      "blocks": [
-        {
-          "text": "저",
-          "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "밥",
-          "role": "對象",
-          "base": "밥"
-        },
-        {
-          "text": "을 ",
-          "role": "助詞",
-          "base": "을",
-          "grammar_note": "有腳腳 (有收音 ㅂ) ➡️ 貼 을"
-        },
-        {
-          "text": "먹고 있어요.",
-          "role": "動作",
-          "base": "먹다",
-          "grammar_note": "詞幹+고 있어요＝正在做"
-        }
-      ],
-      "formula": "[저]는 + [밥(有腳)]을 + [먹고 있어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「正在」就好。",
-      "ko_insight": "韓文在動詞詞幹後面加 고 있어요，不用管陰陽！"
-    }
-  },
-  {
-    "id": "ko_progressive_029",
-    "dimension_label": "正在：고 있어요",
-    "chinese": "弟弟正在睡覺。",
-    "ko": {
-      "sentence": "동생이 자고 있어요.",
-      "blocks": [
-        {
-          "text": "동생",
-          "role": "主角",
-          "base": "동생"
-        },
-        {
-          "text": "이 ",
-          "role": "助詞",
-          "base": "이",
-          "grammar_note": "有腳腳 (有收音 ㅇ) ➡️ 貼 이"
-        },
-        {
-          "text": "자고 있어요.",
-          "role": "動作",
-          "base": "자다",
-          "grammar_note": "詞幹+고 있어요＝正在睡"
-        }
-      ],
-      "formula": "[동생(有腳)]이 + [자고 있어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「正在」就好。",
-      "ko_insight": "韓文在動詞詞幹後面加 고 있어요，不用管陰陽！"
-    }
-  },
-  {
-    "id": "ko_past_030",
-    "dimension_label": "過去式：았/었 時光機",
-    "chinese": "我去了學校。",
-    "ko": {
-      "sentence": "저는 학교에 갔어요.",
-      "blocks": [
-        {
-          "text": "저",
-          "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "학교",
-          "role": "目標",
-          "base": "학교"
-        },
-        {
-          "text": "에 ",
-          "role": "助詞",
-          "base": "에",
-          "grammar_note": "前往目的地"
-        },
-        {
-          "text": "갔어요.",
-          "role": "動作",
-          "base": "가다",
-          "grammar_note": "陽母音 ㅏ ☀️ ➡️ 가+았=갔어요"
-        }
-      ],
-      "formula": "[저]는 + [학교]에 + [갔어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「了」就好。",
-      "ko_insight": "韓文過去式也看陰陽！☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
-    }
-  },
-  {
-    "id": "ko_past_031",
-    "dimension_label": "過去式：았/었 時光機",
-    "chinese": "我吃了飯。",
-    "ko": {
-      "sentence": "저는 밥을 먹었어요.",
-      "blocks": [
-        {
-          "text": "저",
-          "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "밥",
-          "role": "對象",
-          "base": "밥"
-        },
-        {
-          "text": "을 ",
-          "role": "助詞",
-          "base": "을",
-          "grammar_note": "有腳腳 ➡️ 貼 을"
-        },
-        {
-          "text": "먹었어요.",
-          "role": "動作",
-          "base": "먹다",
-          "grammar_note": "陰母音 ㅓ 🌙 ➡️ 먹+었=먹었어요"
-        }
-      ],
-      "formula": "[저]는 + [밥]을 + [먹었어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「了」就好。",
-      "ko_insight": "韓文過去式也看陰陽！☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
-    }
-  },
-  {
-    "id": "ko_past_032",
-    "dimension_label": "過去式：았/었 時光機",
-    "chinese": "我讀書了。",
-    "ko": {
-      "sentence": "저는 공부했어요.",
-      "blocks": [
-        {
-          "text": "저",
-          "role": "主角",
-          "base": "저"
-        },
-        {
-          "text": "는 ",
-          "role": "助詞",
-          "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
-        },
-        {
-          "text": "공부했어요.",
-          "role": "動作",
-          "base": "공부하다",
-          "grammar_note": "⭐ 하다→했어요"
-        }
-      ],
-      "formula": "[저]는 + [공부했어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「了」就好。",
-      "ko_insight": "韓文過去式也看陰陽！☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
-    }
-  },
-  {
-    "id": "ko_request_033",
-    "dimension_label": "請求：아/어 주세요",
-    "chinese": "請教我。",
-    "ko": {
-      "sentence": "가르쳐 주세요.",
-      "blocks": [
-        {
-          "text": "가르쳐 주세요.",
-          "role": "動作",
-          "base": "가르치다",
-          "grammar_note": "陰母音 ➡️ 어 주세요 (쳐)"
-        }
-      ],
-      "formula": "[가르쳐 주세요](🙏請教我)"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「請」就好。",
-      "ko_insight": "韓文用 아/어 주세요 表示「請幫我做…」！很有禮貌的請求方式 🙏"
-    }
-  },
-  {
-    "id": "ko_request_034",
-    "dimension_label": "請求：아/어 주세요",
-    "chinese": "請等一下。",
-    "ko": {
-      "sentence": "잠깐만 기다려 주세요.",
-      "blocks": [
-        {
-          "text": "잠깐만 ",
-          "role": "時間",
-          "base": "잠깐만",
-          "grammar_note": "等一下"
-        },
-        {
-          "text": "기다려 주세요.",
-          "role": "動作",
-          "base": "기다리다",
-          "grammar_note": "陰母音 ➡️ 어 주세요 (려)"
-        }
-      ],
-      "formula": "[잠깐만] + [기다려 주세요](🙏請等)"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「請」就好。",
-      "ko_insight": "韓文用 아/어 주세요 表示「請幫我做…」！很有禮貌的請求方式 🙏"
-    }
-  },
-  {
-    "id": "ko_request_035",
-    "dimension_label": "請求：아/어 주세요",
-    "chinese": "請幫我拍照。",
-    "ko": {
-      "sentence": "사진 찍어 주세요.",
-      "blocks": [
-        {
-          "text": "사진 ",
-          "role": "對象",
-          "base": "사진",
-          "grammar_note": "照片"
-        },
-        {
-          "text": "찍어 주세요.",
-          "role": "動作",
-          "base": "찍다",
-          "grammar_note": "陰母音 🌙 ➡️ 어 주세요"
-        }
-      ],
-      "formula": "[사진] + [찍어 주세요](🙏請拍)"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「請」就好。",
-      "ko_insight": "韓文用 아/어 주세요 表示「請幫我做…」！很有禮貌的請求方式 🙏"
-    }
-  },
-  {
-    "id": "ko_conditional_036",
-    "dimension_label": "如果：(으)면",
-    "chinese": "如果便宜就買。",
-    "ko": {
-      "sentence": "싸면 사요.",
-      "blocks": [
-        {
-          "text": "싸면 ",
-          "role": "連接",
-          "base": "싸다",
-          "grammar_note": "沒腳腳 ➡️ 加 면"
-        },
-        {
-          "text": "사요.",
-          "role": "動作",
-          "base": "사다",
-          "grammar_note": "陽母音 ☀️ ➡️ 아요"
-        }
-      ],
-      "formula": "[싸(沒腳)]면 + [사요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文「如果…就…」動詞不變形。",
-      "ko_insight": "韓文用 (으)면 表示「如果」！有收音🦶加 으면，沒收音👟加 면"
-    }
-  },
-  {
-    "id": "ko_conditional_037",
-    "dimension_label": "如果：(으)면",
-    "chinese": "如果下雨就不去。",
-    "ko": {
-      "sentence": "비가 오면 안 가요.",
-      "blocks": [
-        {
-          "text": "비",
-          "role": "主角",
-          "base": "비"
+          "base": "우리 강아지",
+          "grammar_note": "我的狗"
         },
         {
           "text": "가 ",
           "role": "助詞",
           "base": "가",
-          "grammar_note": "沒腳腳 ➡️ 貼 가"
+          "grammar_note": "沒腳👟→가"
         },
         {
-          "text": "오면 ",
-          "role": "連接",
-          "base": "오다",
-          "grammar_note": "沒腳腳 ➡️ 加 면"
-        },
-        {
-          "text": "안 ",
-          "role": "修飾",
-          "base": "안",
-          "grammar_note": "✋ 不"
-        },
-        {
-          "text": "가요.",
+          "text": "자고 있어요.",
           "role": "動作",
-          "base": "가다",
-          "grammar_note": "陽母音 ☀️ ➡️ 아요"
+          "base": "자다",
+          "grammar_note": "⏳詞幹+고 있어요＝正在睡"
         }
       ],
-      "formula": "[비(沒腳)]가 + [오(沒腳)]면 + 안 + [가요]"
+      "formula": "[우리 강아지]가 + [자고 있어요⏳]"
     },
     "contrast": {
-      "cn_blindspot": "中文「如果…就…」動詞不變形。",
-      "ko_insight": "韓文用 (으)면 表示「如果」！有收音🦶加 으면，沒收音👟加 면"
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
     }
   },
   {
-    "id": "ko_conditional_038",
-    "dimension_label": "如果：(으)면",
-    "chinese": "如果好吃就再吃。",
+    "id": "ko_combo_055",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
+    "chinese": "我正在寫作業。",
     "ko": {
-      "sentence": "맛있으면 더 먹어요.",
+      "sentence": "저는 숙제를 하고 있어요.",
       "blocks": [
         {
-          "text": "맛있으면 ",
-          "role": "連接",
-          "base": "맛있다",
-          "grammar_note": "有腳腳 ➡️ 加 으면"
-        },
-        {
-          "text": "더 ",
-          "role": "修飾",
-          "base": "더",
-          "grammar_note": "再/更"
-        },
-        {
-          "text": "먹어요.",
-          "role": "動作",
-          "base": "먹다",
-          "grammar_note": "陰母音 🌙 ➡️ 어요"
-        }
-      ],
-      "formula": "[맛있(有腳)]으면 + 더 + [먹어요]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文「如果…就…」動詞不變形。",
-      "ko_insight": "韓文用 (으)면 表示「如果」！有收音🦶加 으면，沒收音👟加 면"
-    }
-  },
-  {
-    "id": "ko_numbers_039",
-    "dimension_label": "數字：兩套數字系統",
-    "chinese": "三個蘋果。",
-    "ko": {
-      "sentence": "사과 세 개.",
-      "blocks": [
-        {
-          "text": "사과 ",
-          "role": "對象",
-          "base": "사과",
-          "grammar_note": "蘋果"
-        },
-        {
-          "text": "세 ",
-          "role": "修飾",
-          "base": "셋",
-          "grammar_note": "固有數詞：3→셋→세（量詞前變形）"
-        },
-        {
-          "text": "개.",
-          "role": "修飾",
-          "base": "개",
-          "grammar_note": "量詞：個"
-        }
-      ],
-      "formula": "[사과] + [세(固有數詞3)] + [개(量詞)]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文只有一套數字系統。",
-      "ko_insight": "韓文有兩套數字！數東西用固有數詞（하나둘셋），日期金額用漢字數詞（일이삼）！"
-    }
-  },
-  {
-    "id": "ko_numbers_040",
-    "dimension_label": "數字：兩套數字系統",
-    "chinese": "兩杯咖啡。",
-    "ko": {
-      "sentence": "커피 두 잔.",
-      "blocks": [
-        {
-          "text": "커피 ",
-          "role": "對象",
-          "base": "커피",
-          "grammar_note": "咖啡"
-        },
-        {
-          "text": "두 ",
-          "role": "修飾",
-          "base": "둘",
-          "grammar_note": "固有數詞：2→둘→두"
-        },
-        {
-          "text": "잔.",
-          "role": "修飾",
-          "base": "잔",
-          "grammar_note": "量詞：杯"
-        }
-      ],
-      "formula": "[커피] + [두(固有數詞2)] + [잔(量詞)]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文只有一套數字系統。",
-      "ko_insight": "韓文有兩套數字！數東西用固有數詞（하나둘셋），日期金額用漢字數詞（일이삼）！"
-    }
-  },
-  {
-    "id": "ko_numbers_041",
-    "dimension_label": "數字：兩套數字系統",
-    "chinese": "三月十五日。",
-    "ko": {
-      "sentence": "삼월 십오일.",
-      "blocks": [
-        {
-          "text": "삼월 ",
-          "role": "時間",
-          "base": "삼월",
-          "grammar_note": "漢字數詞：三月"
-        },
-        {
-          "text": "십오일.",
-          "role": "時間",
-          "base": "십오일",
-          "grammar_note": "漢字數詞：十五日"
-        }
-      ],
-      "formula": "[삼월(漢字3月)] + [십오일(漢字15日)]"
-    },
-    "contrast": {
-      "cn_blindspot": "中文只有一套數字系統。",
-      "ko_insight": "韓文有兩套數字！數東西用固有數詞（하나둘셋），日期金額用漢字數詞（일이삼）！"
-    }
-  },
-  {
-    "id": "ko_honorific_042",
-    "dimension_label": "敬語：對長輩特別禮貌",
-    "chinese": "爸爸在家。（敬語）",
-    "ko": {
-      "sentence": "아버지는 집에 계세요.",
-      "blocks": [
-        {
-          "text": "아버지",
+          "text": "저",
           "role": "主角",
-          "base": "아버지",
-          "grammar_note": "爸爸"
+          "base": "저"
         },
         {
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "沒腳腳 ➡️ 貼 는"
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "집",
-          "role": "場景",
-          "base": "집"
+          "text": "숙제",
+          "role": "對象",
+          "base": "숙제",
+          "grammar_note": "作業"
         },
         {
-          "text": "에 ",
+          "text": "를 ",
           "role": "助詞",
-          "base": "에",
-          "grammar_note": "📍 靜態位置"
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
         },
         {
-          "text": "계세요.",
+          "text": "하고 있어요.",
           "role": "動作",
-          "base": "계시다",
-          "grammar_note": "👔 있다的敬語＝계시다"
+          "base": "하다",
+          "grammar_note": "⏳詞幹+고 있어요＝正在做"
         }
       ],
-      "formula": "[아버지]는 + [집]에 + [계세요](👔敬語)"
+      "formula": "[저]는 + [숙제👟]를 + [하고 있어요⏳]"
     },
     "contrast": {
-      "cn_blindspot": "中文加「您」「請」就夠客氣了。",
-      "ko_insight": "韓文對長輩必須用特殊敬語動詞！있다→계시다，먹다→드시다，자다→주무시다"
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
     }
   },
   {
-    "id": "ko_honorific_043",
-    "dimension_label": "敬語：對長輩特別禮貌",
-    "chinese": "老師吃了。（敬語）",
+    "id": "ko_combo_056",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
+    "chinese": "橡皮擦不見了。",
     "ko": {
-      "sentence": "선생님은 드셨어요.",
+      "sentence": "지우개가 없어졌어요.",
+      "blocks": [
+        {
+          "text": "지우개",
+          "role": "主角",
+          "base": "지우개",
+          "grammar_note": "橡皮擦"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "없어졌어요.",
+          "role": "動作",
+          "base": "없어지다",
+          "grammar_note": "不見了/消失了"
+        }
+      ],
+      "formula": "[지우개👟]가 + [없어졌어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
+    }
+  },
+  {
+    "id": "ko_combo_057",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
+    "chinese": "忘記洗碗。",
+    "ko": {
+      "sentence": "설거지를 깜빡했어요.",
+      "blocks": [
+        {
+          "text": "설거지",
+          "role": "對象",
+          "base": "설거지",
+          "grammar_note": "洗碗"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "깜빡했어요.",
+          "role": "動作",
+          "base": "깜빡하다",
+          "grammar_note": "⭐깜빡+하다→했어요(忘記了)"
+        }
+      ],
+      "formula": "[설거지]를 + [깜빡했어요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
+    }
+  },
+  {
+    "id": "ko_combo_058",
+    "dimension_label": "✋ 否定＆🌟想要＆⏳正在",
+    "chinese": "忘記帶作業。",
+    "ko": {
+      "sentence": "숙제를 안 가져왔어요.",
+      "blocks": [
+        {
+          "text": "숙제",
+          "role": "對象",
+          "base": "숙제",
+          "grammar_note": "作業"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "안 ",
+          "role": "修飾",
+          "base": "안",
+          "grammar_note": "✋沒有"
+        },
+        {
+          "text": "가져왔어요.",
+          "role": "動作",
+          "base": "가져오다",
+          "grammar_note": "帶來了"
+        }
+      ],
+      "formula": "[숙제]를 + 안(✋) + [가져왔어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「不」「想」「正在」就好。",
+      "ko_insight": "안＝不、고 싶어요＝想做、고 있어요＝正在做，三個萬能接頭超好用！"
+    }
+  },
+  {
+    "id": "ko_past_059",
+    "dimension_label": "⏰ 過去式時光機",
+    "chinese": "我考一百分。",
+    "ko": {
+      "sentence": "저는 백점을 받았어요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "백점",
+          "role": "對象",
+          "base": "백점",
+          "grammar_note": "一百分"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㅁ→을"
+        },
+        {
+          "text": "받았어요.",
+          "role": "動作",
+          "base": "받다",
+          "grammar_note": "☀️陽ㅏ→았어요"
+        }
+      ],
+      "formula": "[저]는 + [백점🦶]을 + [받았어요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「了」就好。",
+      "ko_insight": "☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
+    }
+  },
+  {
+    "id": "ko_past_060",
+    "dimension_label": "⏰ 過去式時光機",
+    "chinese": "爸爸結帳。",
+    "ko": {
+      "sentence": "아빠가 계산했어요.",
+      "blocks": [
+        {
+          "text": "아빠",
+          "role": "主角",
+          "base": "아빠",
+          "grammar_note": "爸爸"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "계산했어요.",
+          "role": "動作",
+          "base": "계산하다",
+          "grammar_note": "⭐계산+하다→했어요"
+        }
+      ],
+      "formula": "[아빠👟]가 + [계산했어요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「了」就好。",
+      "ko_insight": "☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
+    }
+  },
+  {
+    "id": "ko_past_061",
+    "dimension_label": "⏰ 過去式時光機",
+    "chinese": "下課鐘響了。",
+    "ko": {
+      "sentence": "종이 울렸어요.",
+      "blocks": [
+        {
+          "text": "종",
+          "role": "主角",
+          "base": "종",
+          "grammar_note": "鐘"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㅇ→이"
+        },
+        {
+          "text": "울렸어요.",
+          "role": "動作",
+          "base": "울리다",
+          "grammar_note": "🌙陰→렸어요"
+        }
+      ],
+      "formula": "[종🦶]이 + [울렸어요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「了」就好。",
+      "ko_insight": "☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
+    }
+  },
+  {
+    "id": "ko_past_062",
+    "dimension_label": "⏰ 過去式時光機",
+    "chinese": "老師生氣了。",
+    "ko": {
+      "sentence": "선생님이 화났어요.",
       "blocks": [
         {
           "text": "선생님",
@@ -1559,52 +2466,31 @@
           "grammar_note": "老師"
         },
         {
-          "text": "은 ",
+          "text": "이 ",
           "role": "助詞",
-          "base": "은",
-          "grammar_note": "有腳腳 ➡️ 貼 은"
+          "base": "이",
+          "grammar_note": "有腳🦶ㅁ→이"
         },
         {
-          "text": "드셨어요.",
+          "text": "화났어요.",
           "role": "動作",
-          "base": "드시다",
-          "grammar_note": "👔 먹다的敬語＝드시다"
+          "base": "화나다",
+          "grammar_note": "☀️陽ㅏ→났어요(生氣了)"
         }
       ],
-      "formula": "[선생님(有腳)]은 + [드셨어요](👔敬語)"
+      "formula": "[선생님🦶]이 + [화났어요☀️]"
     },
     "contrast": {
-      "cn_blindspot": "中文加「您」「請」就夠客氣了。",
-      "ko_insight": "韓文對長輩必須用特殊敬語動詞！있다→계시다，먹다→드시다，자다→주무시다"
+      "cn_blindspot": "中文加「了」就好。",
+      "ko_insight": "☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
     }
   },
   {
-    "id": "ko_honorific_044",
-    "dimension_label": "敬語：對長輩特別禮貌",
-    "chinese": "請進。（敬語）",
+    "id": "ko_past_063",
+    "dimension_label": "⏰ 過去式時光機",
+    "chinese": "我流汗了。",
     "ko": {
-      "sentence": "들어오세요.",
-      "blocks": [
-        {
-          "text": "들어오세요.",
-          "role": "動作",
-          "base": "들어오다",
-          "grammar_note": "👔 들어오다+(으)세요＝請進"
-        }
-      ],
-      "formula": "[들어오세요](👔請進)"
-    },
-    "contrast": {
-      "cn_blindspot": "中文加「您」「請」就夠客氣了。",
-      "ko_insight": "韓文對長輩必須用特殊敬語動詞！있다→계시다，먹다→드시다，자다→주무시다"
-    }
-  },
-  {
-    "id": "ko_comparison_045",
-    "dimension_label": "韓日雙胞胎：找不同",
-    "chinese": "我吃蘋果。（韓文）",
-    "ko": {
-      "sentence": "저는 사과를 먹어요.",
+      "sentence": "저는 땀이 났어요.",
       "blocks": [
         {
           "text": "저",
@@ -1615,53 +2501,846 @@
           "text": "는 ",
           "role": "助詞",
           "base": "는",
-          "grammar_note": "＝日文の は"
+          "grammar_note": "沒腳👟→는"
         },
         {
-          "text": "사과",
+          "text": "땀",
+          "role": "主角",
+          "base": "땀",
+          "grammar_note": "汗"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㅁ→이"
+        },
+        {
+          "text": "났어요.",
+          "role": "動作",
+          "base": "나다",
+          "grammar_note": "☀️陽ㅏ→났어요(出來了)"
+        }
+      ],
+      "formula": "[저]는 + [땀🦶]이 + [났어요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「了」就好。",
+      "ko_insight": "☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
+    }
+  },
+  {
+    "id": "ko_past_064",
+    "dimension_label": "⏰ 過去式時光機",
+    "chinese": "尺斷掉了。",
+    "ko": {
+      "sentence": "자가 부러졌어요.",
+      "blocks": [
+        {
+          "text": "자",
+          "role": "主角",
+          "base": "자",
+          "grammar_note": "尺"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "부러졌어요.",
+          "role": "動作",
+          "base": "부러지다",
+          "grammar_note": "🌙陰→졌어요(斷了)"
+        }
+      ],
+      "formula": "[자👟]가 + [부러졌어요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文加「了」就好。",
+      "ko_insight": "☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
+    }
+  },
+  {
+    "id": "ko_past_065",
+    "dimension_label": "⏰ 過去式時光機",
+    "chinese": "我買門票。",
+    "ko": {
+      "sentence": "저는 표를 샀어요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "표",
           "role": "對象",
-          "base": "사과",
-          "grammar_note": "蘋果＝日文の りんご"
+          "base": "표",
+          "grammar_note": "門票"
         },
         {
           "text": "를 ",
           "role": "助詞",
           "base": "를",
-          "grammar_note": "＝日文の を"
+          "grammar_note": "沒腳👟→를"
         },
         {
-          "text": "먹어요.",
+          "text": "샀어요.",
           "role": "動作",
-          "base": "먹다",
-          "grammar_note": "吃＝日文の 食べます"
+          "base": "사다",
+          "grammar_note": "☀️陽ㅏ→샀어요(買了)"
         }
       ],
-      "formula": "韓：저는 사과를 먹어요 ≈ 日：私は りんごを 食べます"
+      "formula": "[저]는 + [표👟]를 + [샀어요☀️]"
     },
     "contrast": {
-      "cn_blindspot": "中文跟韓文日文的語序完全不同（SVO vs SOV）。",
-      "ko_insight": "韓文和日文是雙胞胎語言！語序一樣（SOV），但韓文有收音、有空格、用拼音文字！"
+      "cn_blindspot": "中文加「了」就好。",
+      "ko_insight": "☀️陽→았어요，🌙陰→었어요，⭐하다→했어요"
     }
   },
   {
-    "id": "ko_comparison_046",
-    "dimension_label": "韓日雙胞胎：找不同",
-    "chinese": "你好嗎？（韓文）",
+    "id": "ko_daily_066",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "天氣很好。",
     "ko": {
-      "sentence": "안녕하세요?",
+      "sentence": "날씨가 좋아요.",
       "blocks": [
         {
-          "text": "안녕하세요?",
+          "text": "날씨",
+          "role": "主角",
+          "base": "날씨",
+          "grammar_note": "天氣"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "좋아요.",
           "role": "動作",
-          "base": "안녕하다",
-          "grammar_note": "您好＝類似日文の こんにちは"
+          "base": "좋다",
+          "grammar_note": "☀️陽ㅗ→아요"
         }
       ],
-      "formula": "韓：안녕하세요 ≈ 日：こんにちは"
+      "formula": "[날씨👟]가 + [좋아요☀️]"
     },
     "contrast": {
-      "cn_blindspot": "中文跟韓文日文的語序完全不同（SVO vs SOV）。",
-      "ko_insight": "韓文和日文是雙胞胎語言！語序一樣（SOV），但韓文有收音、有空格、用拼音文字！"
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_067",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "天氣非常熱。",
+    "ko": {
+      "sentence": "날씨가 너무 더워요.",
+      "blocks": [
+        {
+          "text": "날씨",
+          "role": "主角",
+          "base": "날씨"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "너무 ",
+          "role": "修飾",
+          "base": "너무",
+          "grammar_note": "非常"
+        },
+        {
+          "text": "더워요.",
+          "role": "動作",
+          "base": "덥다",
+          "grammar_note": "🌙워요(ㅂ不規則)"
+        }
+      ],
+      "formula": "[날씨]가 + 너무 + [더워요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_068",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "朋友跑很快。",
+    "ko": {
+      "sentence": "친구가 빨리 달려요.",
+      "blocks": [
+        {
+          "text": "친구",
+          "role": "主角",
+          "base": "친구"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "빨리 ",
+          "role": "修飾",
+          "base": "빨리",
+          "grammar_note": "快速地"
+        },
+        {
+          "text": "달려요.",
+          "role": "動作",
+          "base": "달리다",
+          "grammar_note": "🌙陰→려요"
+        }
+      ],
+      "formula": "[친구]가 + 빨리 + [달려요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_069",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "書包非常重。",
+    "ko": {
+      "sentence": "가방이 너무 무거워요.",
+      "blocks": [
+        {
+          "text": "가방",
+          "role": "主角",
+          "base": "가방",
+          "grammar_note": "書包"
+        },
+        {
+          "text": "이 ",
+          "role": "助詞",
+          "base": "이",
+          "grammar_note": "有腳🦶ㅇ→이"
+        },
+        {
+          "text": "너무 ",
+          "role": "修飾",
+          "base": "너무",
+          "grammar_note": "非常"
+        },
+        {
+          "text": "무거워요.",
+          "role": "動作",
+          "base": "무겁다",
+          "grammar_note": "🌙워요(ㅂ不規則)"
+        }
+      ],
+      "formula": "[가방🦶]이 + 너무 + [무거워요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_070",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "明天放假！",
+    "ko": {
+      "sentence": "내일은 쉬는 날이에요!",
+      "blocks": [
+        {
+          "text": "내일",
+          "role": "時間",
+          "base": "내일",
+          "grammar_note": "明天"
+        },
+        {
+          "text": "은 ",
+          "role": "助詞",
+          "base": "은",
+          "grammar_note": "有腳🦶ㄹ→은"
+        },
+        {
+          "text": "쉬는 날이에요!",
+          "role": "動作",
+          "base": "쉬는 날",
+          "grammar_note": "放假的日子！"
+        }
+      ],
+      "formula": "[내일🦶]은 + [쉬는 날이에요!]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_071",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "放學了。",
+    "ko": {
+      "sentence": "하교했어요.",
+      "blocks": [
+        {
+          "text": "하교했어요.",
+          "role": "動作",
+          "base": "하교하다",
+          "grammar_note": "⭐하교+하다→했어요"
+        }
+      ],
+      "formula": "[하교했어요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_072",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "媽媽來接我。",
+    "ko": {
+      "sentence": "엄마가 데리러 왔어요.",
+      "blocks": [
+        {
+          "text": "엄마",
+          "role": "主角",
+          "base": "엄마",
+          "grammar_note": "媽媽"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "데리러 왔어요.",
+          "role": "動作",
+          "base": "데리러 오다",
+          "grammar_note": "來接(某人)"
+        }
+      ],
+      "formula": "[엄마👟]가 + [데리러 왔어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_073",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "我借鉛筆。",
+    "ko": {
+      "sentence": "저는 연필을 빌려요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "연필",
+          "role": "對象",
+          "base": "연필",
+          "grammar_note": "鉛筆"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄹ→을"
+        },
+        {
+          "text": "빌려요.",
+          "role": "動作",
+          "base": "빌리다",
+          "grammar_note": "🌙陰→려요"
+        }
+      ],
+      "formula": "[저]는 + [연필🦶]을 + [빌려요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_074",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "課本在抽屜。",
+    "ko": {
+      "sentence": "교과서가 서랍에 있어요.",
+      "blocks": [
+        {
+          "text": "교과서",
+          "role": "主角",
+          "base": "교과서",
+          "grammar_note": "課本"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "서랍",
+          "role": "場景",
+          "base": "서랍",
+          "grammar_note": "抽屜"
+        },
+        {
+          "text": "에 ",
+          "role": "助詞",
+          "base": "에",
+          "grammar_note": "📍靜態位置"
+        },
+        {
+          "text": "있어요.",
+          "role": "動作",
+          "base": "있다",
+          "grammar_note": "在"
+        }
+      ],
+      "formula": "[교과서👟]가 + [서랍]에(📍) + [있어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_075",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "我自己煮泡麵。",
+    "ko": {
+      "sentence": "저는 혼자 라면을 끓여요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "혼자 ",
+          "role": "修飾",
+          "base": "혼자",
+          "grammar_note": "自己"
+        },
+        {
+          "text": "라면",
+          "role": "對象",
+          "base": "라면",
+          "grammar_note": "泡麵"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄴ→을"
+        },
+        {
+          "text": "끓여요.",
+          "role": "動作",
+          "base": "끓이다",
+          "grammar_note": "🌙陰→여요(煮)"
+        }
+      ],
+      "formula": "[저]는 + 혼자 + [라면🦶]을 + [끓여요🌙]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_076",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "我的狗肚子餓。",
+    "ko": {
+      "sentence": "우리 강아지가 배고파요.",
+      "blocks": [
+        {
+          "text": "우리 강아지",
+          "role": "主角",
+          "base": "우리 강아지",
+          "grammar_note": "我的狗"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "배고파요.",
+          "role": "動作",
+          "base": "배고프다",
+          "grammar_note": "☀️陽ㅗ→파요(肚子餓)"
+        }
+      ],
+      "formula": "[우리 강아지]가 + [배고파요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_077",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "坐飛機很好玩。",
+    "ko": {
+      "sentence": "비행기 타는 것은 재미있어요.",
+      "blocks": [
+        {
+          "text": "비행기 타는 것",
+          "role": "主角",
+          "base": "비행기 타는 것",
+          "grammar_note": "坐飛機這件事"
+        },
+        {
+          "text": "은 ",
+          "role": "助詞",
+          "base": "은",
+          "grammar_note": "有腳🦶ㅅ→은"
+        },
+        {
+          "text": "재미있어요.",
+          "role": "動作",
+          "base": "재미있다",
+          "grammar_note": "有趣"
+        }
+      ],
+      "formula": "[비행기 타는 것🦶]은 + [재미있어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_078",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "爸爸開車。",
+    "ko": {
+      "sentence": "아빠가 운전해요.",
+      "blocks": [
+        {
+          "text": "아빠",
+          "role": "主角",
+          "base": "아빠",
+          "grammar_note": "爸爸"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "운전해요.",
+          "role": "動作",
+          "base": "운전하다",
+          "grammar_note": "⭐운전+하다→해요"
+        }
+      ],
+      "formula": "[아빠👟]가 + [운전해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_079",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "火車很酷。",
+    "ko": {
+      "sentence": "기차가 멋있어요.",
+      "blocks": [
+        {
+          "text": "기차",
+          "role": "主角",
+          "base": "기차",
+          "grammar_note": "火車"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "멋있어요.",
+          "role": "動作",
+          "base": "멋있다",
+          "grammar_note": "很酷"
+        }
+      ],
+      "formula": "[기차👟]가 + [멋있어요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_080",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "狗狗洗澡。",
+    "ko": {
+      "sentence": "강아지가 목욕해요.",
+      "blocks": [
+        {
+          "text": "강아지",
+          "role": "主角",
+          "base": "강아지",
+          "grammar_note": "狗"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "목욕해요.",
+          "role": "動作",
+          "base": "목욕하다",
+          "grammar_note": "⭐목욕+하다→해요"
+        }
+      ],
+      "formula": "[강아지]가 + [목욕해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_081",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "我去裝水。",
+    "ko": {
+      "sentence": "저는 물을 받으러 가요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "물",
+          "role": "對象",
+          "base": "물",
+          "grammar_note": "水"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄹ→을"
+        },
+        {
+          "text": "받으러 가요.",
+          "role": "動作",
+          "base": "받다",
+          "grammar_note": "去裝(水)"
+        }
+      ],
+      "formula": "[저]는 + [물🦶]을 + [받으러 가요]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_082",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "我看地圖。",
+    "ko": {
+      "sentence": "저는 지도를 봐요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "지도",
+          "role": "對象",
+          "base": "지도",
+          "grammar_note": "地圖"
+        },
+        {
+          "text": "를 ",
+          "role": "助詞",
+          "base": "를",
+          "grammar_note": "沒腳👟→를"
+        },
+        {
+          "text": "봐요.",
+          "role": "動作",
+          "base": "보다",
+          "grammar_note": "☀️陽ㅗ→봐요"
+        }
+      ],
+      "formula": "[저]는 + [지도👟]를 + [봐요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_083",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "包裹到了。",
+    "ko": {
+      "sentence": "택배가 왔어요.",
+      "blocks": [
+        {
+          "text": "택배",
+          "role": "主角",
+          "base": "택배",
+          "grammar_note": "包裹"
+        },
+        {
+          "text": "가 ",
+          "role": "助詞",
+          "base": "가",
+          "grammar_note": "沒腳👟→가"
+        },
+        {
+          "text": "왔어요.",
+          "role": "動作",
+          "base": "오다",
+          "grammar_note": "☀️陽ㅗ→왔어요(來了)"
+        }
+      ],
+      "formula": "[택배👟]가 + [왔어요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_084",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "準備回家。",
+    "ko": {
+      "sentence": "집에 갈 준비해요.",
+      "blocks": [
+        {
+          "text": "집",
+          "role": "目標",
+          "base": "집",
+          "grammar_note": "家"
+        },
+        {
+          "text": "에 ",
+          "role": "助詞",
+          "base": "에",
+          "grammar_note": "📍目的地"
+        },
+        {
+          "text": "갈 준비해요.",
+          "role": "動作",
+          "base": "준비하다",
+          "grammar_note": "⭐準備回去"
+        }
+      ],
+      "formula": "[집]에(📍) + [갈 준비해요⭐]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
+    }
+  },
+  {
+    "id": "ko_daily_085",
+    "dimension_label": "🎒 學校＆日常短句",
+    "chinese": "我抓寶可夢。",
+    "ko": {
+      "sentence": "저는 포켓몬을 잡아요.",
+      "blocks": [
+        {
+          "text": "저",
+          "role": "主角",
+          "base": "저"
+        },
+        {
+          "text": "는 ",
+          "role": "助詞",
+          "base": "는",
+          "grammar_note": "沒腳👟→는"
+        },
+        {
+          "text": "포켓몬",
+          "role": "對象",
+          "base": "포켓몬",
+          "grammar_note": "寶可夢"
+        },
+        {
+          "text": "을 ",
+          "role": "助詞",
+          "base": "을",
+          "grammar_note": "有腳🦶ㄴ→을"
+        },
+        {
+          "text": "잡아요.",
+          "role": "動作",
+          "base": "잡다",
+          "grammar_note": "☀️陽ㅏ→아요(抓)"
+        }
+      ],
+      "formula": "[저]는 + [포켓몬🦶]을 + [잡아요☀️]"
+    },
+    "contrast": {
+      "cn_blindspot": "中文的形容詞不變形。",
+      "ko_insight": "韓文形容詞跟動詞一樣會換衣服！看陰陽母音穿 아요/어요"
     }
   }
 ]
